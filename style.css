@@ -1,10 +1,13 @@
 :root{
+    /* les couleurs global du site */
     --backrgound-body:#FFFFFF;
+    --color-paragraphe-blanc:#FFFFFF;
+    --color-paragraphe-noir: #000000;
+    --input-texte-color:rgba(0, 0, 0, 0.5);
     --couleur-titre: #E35F0F;
     --background-section-1-accueil: #27348B;
     --btn-background-color: #E35F0F;
     --paragraphe-color:#000000;
     --footer-background-color:#3B3B3B;
     --police-titre-size:font-size: 48px;
-
 }
