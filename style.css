@@ -1,3 +1,5 @@
+@import 'header.css';
+
 :root{
     /* les couleurs global du site */
     --backrgound-body:#FFFFFF;
@@ -11,3 +13,5 @@
     --footer-background-color:#3B3B3B;
     --police-titre-size:font-size: 48px;
 }
+
+  

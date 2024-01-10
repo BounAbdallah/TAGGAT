@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans:ital,opsz,wght@1,6..12,700&display=swap');
+/*style du body*/
+body {
+    margin: 0;
+    background-color: var(--backrgound-body);
+    overflow-x: hidden;
+  }
+
+  /*background image du header*/
+  .background-image_header {
+    background:rgba(0,0,0,0.6)url('./images/Rectangle\ 31.png'); 
+    background-size: cover;
+    background-position: center center;
+    width: 1500px;
+    height: 800px;
+    top: -1px;
+    background-blend-mode: darken;
+  }
+  /* le titre du header*/
+  .titre-container h1 {
+    font-family: Nunito;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 369px;
+    margin-left: 422px;
+    width: 705px;
+    height: 81.49px;
+    position: absolute;
+    color: #E35F0F;
+    
+  }
+  .titre-container h1 span{
+    color: #F7F7F7;
+  }
+  /*la partie qui a le background en bleu*/
+  .content {
+    background-color: #27348B;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 410px;
+    margin-bottom: 10px;
+
+  }
+  
+  .content-text {
+    flex: 1;
+    max-width: 65%;
+    margin-top: -70px;
+  }
+  .content-text p {
+    color: #F7F7F7;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 49px;
+    word-spacing: 6px; 
+    width: 800px;
+    margin-left: -285px;
+  }
+  
+  .content-image {
+    flex: 1;
+    width: 30%;
+    margin-left: 45px;
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  .content-image img {
+   
+    display: block;
+    width: 264.42px;
+    height: 500px;
+    margin-top: -100px;
+  }
+  /*le style du titre de l'image */
+  .image_titre{
+    background: #FFFFFF;
+    width:244px;
+    height: 78px;
+    margin-top: -6%;
+    position: relative;
+    left: 21.5%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image_titre a{
+    color: #7C7C7C;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 300;
+    display: block;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 0%;
+  }
+  .image_titre span{
+    margin-top: -8px;
+  }
+  .image_titre span p {
+    color: #1F1F1F;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+  }
+ 
