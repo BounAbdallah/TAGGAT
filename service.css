@@ -256,6 +256,64 @@ header {
     color: #E35F0F;
     font-weight: bold;
   }
+  /* style de la section bibliotheque de ressoure  numerique */
+  .section-de-bibliotheque-de-ressource-numerique{
+    display: flex;
+    Width:Hug (1,212px);
+    Height:Hug (201px);
+    Top:2316px;
+    Left:94px;
+    Gap:78px;
+    margin-left: 90px;
+    margin-top: 50px;
+
+  }
+  .numero-du-titre5{
+    margin-top: 20px;
+    color: #E35F0F;
+    font-size: 25px;
+  }
+  .paragraphe5{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+  }
+  .section-de-bibliotheque-de-ressource-numerique img{
+    Width:340px;
+    Height:120px;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  .section-de-bibliotheque-de-ressource-numerique p{
+    margin-left: 70px;
+    font-size:14px; 
+    margin-left: 18px
+
+  }
+  .section-de-bibliotheque-de-ressource-numerique .titre5{
+    color: #E35F0F;
+    font-weight: bold;
+
+  }
+  /* style de la phrase comment sa marche */
+  .comment-sa-marche{
+    color: white;
+    background: #E35F0F;
+    font-size: 15px;
+    font-weight: 700;
+    Width:200px;
+    Height:51px;
+    Top:2615px;
+    border-Radius:10px;
+    Font-family:Nunito;
+    font-weight:800;
+    Size:24px;
+    Line-height:34px;
+    margin-left: 400px;
+    text-align: center;
+  }
+  
+
   
 
 
