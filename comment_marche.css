@@ -43,7 +43,8 @@ body {
   .content {
     background-color: #27348B;
     display: flex;
-    align-items: center;
+    display: flex;
+  align-items: flex-start; 
     padding: 20px;
     width: 100%;
     height: 410px;
@@ -52,28 +53,25 @@ body {
   }
   
   .content-text {
-    flex: 1;
-    max-width: 65%;
-    margin-top: -70px;
+    max-width: 70%;
   }
   .content-text p {
     color: #F7F7F7;
     font-family: Inter;
     font-size: 24px;
     font-weight: 400;
-    line-height: 49px;
+    line-height: 50px;
     word-spacing: 6px; 
-    width: 800px;
-    margin-left: -285px;
+    width: 90%;
+    padding-top: 30px;
   }
   
   .content-image {
     flex: 1;
     width: 30%;
     margin-left: 45px;
-    position: relative;
-    display: inline-block;
-
+   margin-top: -7%;
+   
   }
   
   .content-image img {
@@ -81,16 +79,15 @@ body {
     display: block;
     width: 264.42px;
     height: 500px;
-    margin-top: -100px;
+    
   }
   /*le style du titre de l'image */
   .image_titre{
     background: #FFFFFF;
     width:244px;
     height: 78px;
-    margin-top: -6%;
-    position: relative;
-    left: 21.5%;
+    margin-top: -12%;
+    margin-left: 38%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
@@ -106,10 +103,8 @@ body {
     padding-top: 15px;
     padding-bottom: 0%;
   }
-  .image_titre span{
-    margin-top: -8px;
-  }
-  .image_titre span p {
+  
+  .image_titre .Prochain_pro p {
     color: #1F1F1F;
     font-family: Inter;
     font-size: 15px;
@@ -140,14 +135,14 @@ body {
   
   .titre_inscription .nombre{
     display: inline-block;
-   padding: 10px 20px;
+   padding: 10px 25px;
    color: white;
    border-radius: 50%;
    font-size: 70px;
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 
   }
-  .titre_inscription h1{
+  .titre_inscription h2{
     font-family: Nunito;
     font-size: 40px;
     font-weight: 800;
@@ -206,14 +201,14 @@ body {
    
    .titre_consultation .nombre{
      display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 25px;
     color: white;
     border-radius: 50%;
     font-size: 70px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
  
    }
-   .titre_consultation h1{
+   .titre_consultation h2{
      font-family: Nunito;
      font-size: 40px;
      font-weight: 800;
@@ -271,14 +266,14 @@ body {
    
    .titre_coaching .nombre{
      display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 25px;
     color: white;
     border-radius: 50%;
     font-size: 70px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
  
    }
-   .titre_coaching h1{
+   .titre_coaching h2{
      font-family: Nunito;
      font-size: 40px;
      font-weight: 800;
@@ -336,14 +331,14 @@ body {
    
    .titre_ressources .nombre{
      display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 25px;
     color: white;
     border-radius: 50%;
     font-size: 70px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
  
    }
-   .titre_ressources h1{
+   .titre_ressources h2{
      font-family: Nunito;
      font-size: 40px;
      font-weight: 800;
@@ -400,14 +395,14 @@ body {
    
    .titre_evolution .nombre{
      display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 25px;
     color: white;
     border-radius: 50%;
     font-size: 70px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
  
    }
-   .titre_evolution h1{
+   .titre_evolution h2{
      font-family: Nunito;
      font-size: 40px;
      font-weight: 800;
@@ -454,8 +449,8 @@ body {
     justify-content: center;
     margin: 80px;
    }
-.button button{
-  width: 336px;
+.button a{
+  width: 320px;
   height: 60px;
   border-radius: 10px;
   background: #E35F0F;
@@ -463,10 +458,9 @@ body {
   font-family: Nunito;
   font-size: 32px;
 font-weight: 700;
-line-height: 34px;
-letter-spacing: 0em;
 text-align: center;
 border: none;
+text-decoration: none;
   
 }
 /*section equipe*/
