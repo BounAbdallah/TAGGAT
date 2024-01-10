@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans:ital,opsz,wght@1,6..12,700&display=swap');
 /*style du body*/
 body {
     margin: 0;
-    background-color: var(--backrgound-body);
+    background-color: #FFFFFF;
     overflow-x: hidden;
   }
 
@@ -37,6 +37,9 @@ body {
     color: #F7F7F7;
   }
   /*la partie qui a le background en bleu*/
+  #Programme{
+    margin: 0;
+  }
   .content {
     background-color: #27348B;
     display: flex;
@@ -44,7 +47,7 @@ body {
     padding: 20px;
     width: 100%;
     height: 410px;
-    margin-bottom: 10px;
+    margin: 0;
 
   }
   
@@ -112,4 +115,359 @@ body {
     font-size: 15px;
     font-weight: 400;
   }
+  /*la section inscription*/
+  #inscription{
+    background: linear-gradient(180deg, rgba(125, 92, 54, 0.5824) 0%, rgba(5, 24, 47, 0.576) 107.15%);
+    margin-top: 0;
+  }
+  /*etape 1*/
+  .la_premiere_etape{
+   display: inline-block;
+    margin: 0px 100px 0px 100px;
+    max-width: 100%;
+  }
+  .la_partie_texte{
+    max-width: 50%;
+
+  }
+  .titre_inscription{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+
+  }
+  
+  .titre_inscription .nombre{
+    display: inline-block;
+   padding: 10px 20px;
+   color: white;
+   border-radius: 50%;
+   font-size: 70px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+  }
+  .titre_inscription h1{
+    font-family: Nunito;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 90px;
+    letter-spacing: 0em;
+    color: #27348B;
+   
+
+  }
+  .ligne_conteneur{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: 100px;
+  }
+
+  .les_paragraphes span{
+    color: #E35F0F;
+  }
+  .les_paragraphes p{
+    font-family: Nunito;
+    font-size: 23.5px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #FFFFFF;
+
+  }
+  .la_partie_image{
+    max-width: 50%;
+
+
+  }
+  .la_partie_image img{
+    width: 350px;
+    height: 350px;
+  }
+  /*etape 2*/
+  .la_deuxieme_etape{
+    display: inline-block;
+     margin: 0px 100px 0px 100px;
+     max-width: 100%;
+   }
+   .la_partie_texte{
+     max-width: 50%;
+ 
+   }
+   .titre_consultation{
+     display: flex;
+     gap: 50px;
+     margin-top: 50px;
+     justify-content: end;
+ 
+   }
+   
+   .titre_consultation .nombre{
+     display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50%;
+    font-size: 70px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+ 
+   }
+   .titre_consultation h1{
+     font-family: Nunito;
+     font-size: 40px;
+     font-weight: 800;
+     line-height: 90px;
+     letter-spacing: 0em;
+     color: #27348B;
+    
+ 
+   }
+   .ligne_conteneur{
+     display: flex;
+     flex-wrap: wrap;
+     max-width: 100%;
+     gap: 100px;
+   }
+ 
+   .les_paragraphes span{
+     color: #E35F0F;
+   }
+   .les_paragraphes p{
+     font-family: Nunito;
+     font-size: 23.5px;
+     font-weight: 500;
+     line-height: 40px;
+     letter-spacing: 0.04em;
+     text-align: left;
+     color: #FFFFFF;
+ 
+   }
+   .la_partie_image{
+     max-width: 50%;
+ 
+ 
+   }
+   .la_partie_image img{
+     width: 350px;
+     height: 350px;
+   }
+   /*etape 3*/
+  .la_troisieme_etape{
+    display: inline-block;
+     margin: 0px 100px 0px 100px;
+     max-width: 100%;
+   }
+   .la_partie_texte{
+     max-width: 50%;
+ 
+   }
+   .titre_coaching{
+     display: flex;
+     gap: 50px;
+     margin-top: 50px;
+ 
+   }
+   
+   .titre_coaching .nombre{
+     display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50%;
+    font-size: 70px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+ 
+   }
+   .titre_coaching h1{
+     font-family: Nunito;
+     font-size: 40px;
+     font-weight: 800;
+     line-height: 90px;
+     letter-spacing: 0em;
+     color: #27348B;
+    
+ 
+   }
+   .ligne_conteneur{
+     display: flex;
+     flex-wrap: wrap;
+     max-width: 100%;
+     gap: 100px;
+   }
+ 
+   .les_paragraphes span{
+     color: #E35F0F;
+   }
+   .les_paragraphes p{
+     font-family: Nunito;
+     font-size: 23.5px;
+     font-weight: 500;
+     line-height: 40px;
+     letter-spacing: 0.04em;
+     text-align: left;
+     color: #FFFFFF;
+ 
+   }
+   .la_partie_image{
+     max-width: 50%;
+ 
+ 
+   }
+   .la_partie_image img{
+     width: 350px;
+     height: 350px;
+   }
+   /*etape 4*/
+  .la_quatrieme_etape{
+    display: inline-block;
+     margin: 0px 100px 0px 100px;
+     max-width: 100%;
+   }
+   .la_partie_texte{
+     max-width: 50%;
+ 
+   }
+   .titre_ressources{
+     display: flex;
+     gap: 50px;
+     margin-top: 50px;
+     justify-content: end;
+   }
+   
+   .titre_ressources .nombre{
+     display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50%;
+    font-size: 70px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+ 
+   }
+   .titre_ressources h1{
+     font-family: Nunito;
+     font-size: 40px;
+     font-weight: 800;
+     line-height: 90px;
+     letter-spacing: 0em;
+     color: #27348B;
+    
+ 
+   }
+   .ligne_conteneur{
+     display: flex;
+     flex-wrap: wrap;
+     max-width: 100%;
+     gap: 100px;
+   }
+ 
+   .les_paragraphes span{
+     color: #E35F0F;
+   }
+   .titre_ressources .les_paragraphes p{
+     font-family: Nunito;
+     font-size: 23.5px;
+     font-weight: 500;
+     line-height: 40px;
+     letter-spacing: 0.04em;
+     text-align: left;
+     color: #FFFFFF;
+     margin-top: 50px;
+ 
+   }
+    .la_partie_image{
+     max-width: 50%;
+   }
+   .la_partie_image img{
+     width: 350px;
+     height: 350px;
+   }
+   /*etape 5*/
+  .la_cinquieme_etape{
+    display: inline-block;
+     margin: 0px 100px 0px 100px;
+     max-width: 100%;
+   }
+   .la_partie_texte{
+     max-width: 50%;
+ 
+   }
+   .titre_evolution{
+     display: flex;
+     gap: 50px;
+     margin-top: 50px;
+ 
+   }
+   
+   .titre_evolution .nombre{
+     display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50%;
+    font-size: 70px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+ 
+   }
+   .titre_evolution h1{
+     font-family: Nunito;
+     font-size: 40px;
+     font-weight: 800;
+     line-height: 90px;
+     letter-spacing: 0em;
+     color: #27348B;
+    
+ 
+   }
+   .ligne_conteneur{
+     display: flex;
+     flex-wrap: wrap;
+     max-width: 100%;
+     gap: 100px;
+   }
+ 
+   .titre_evolution .les_paragraphes span{
+     color: #E35F0F;
+     font-style: italic;
+   }
+   .titre_evolution .les_paragraphes p{
+     font-family: Nunito;
+     font-size: 23.5px;
+     font-style: italic;
+     font-weight: 500;
+     line-height: 40px;
+     letter-spacing: 0.04em;
+     text-align: left;
+     color: #FFFFFF;
+ 
+   }
+   .la_partie_image{
+     max-width: 50%;
+ 
+ 
+   }
+   .la_partie_image img{
+     width: 350px;
+     height: 350px;
+   }
+   /*le css du bouton*/
+   .button{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+   }
+.button button{
+  width: 336px;
+  height: 60px;
+  border-radius: 10px;
+  background: #E35F0F;
+  color: #FFFFFF;
+  font-family: Nunito;
+  font-size: 32px;
+font-weight: 700;
+line-height: 34px;
+letter-spacing: 0em;
+text-align: center;
+border: none;
+  
+}
+
+
  
