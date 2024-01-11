@@ -20,7 +20,7 @@ body {
   /* le titre du header*/
   .titre-container h1 {
     font-family: Nunito;
-    font-size: 52px;
+    font-size: 64px;
     font-weight: 700;
     line-height: 60px;
     letter-spacing: 0em;
@@ -30,11 +30,11 @@ body {
     width: 705px;
     height: 81.49px;
     position: absolute;
-    color: #E35F0F;
+    color: #F7F7F7;
     
   }
   .titre-container h1 span{
-    color: #F7F7F7;
+    color: #E35F0F;
   }
   /*la partie qui a le background en bleu*/
   #Programme{
@@ -47,16 +47,17 @@ body {
   align-items: flex-start; 
     padding: 20px;
     width: 100%;
-    height: 410px;
+    height: 465px;
     margin: 0;
 
   }
   
   .content-text {
     max-width: 70%;
+    
   }
   .content-text p {
-    color: #F7F7F7;
+    color: #FFF;
     font-family: Inter;
     font-size: 24px;
     font-weight: 400;
@@ -92,6 +93,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+
   }
   .image_titre a{
     color: #7C7C7C;
