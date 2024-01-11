@@ -200,6 +200,7 @@ line-height: 28px; /* 58.333% */
   }
   .form_contenaire form .input{
     display: flex;
+    margin-left: 11px;
     min-height: 40px;
     padding: 16px 31px 17px 31px;
     align-items: flex-start;
