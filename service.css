@@ -249,19 +249,27 @@ letter-spacing: 0.8px;
 
   }
   /* style de la phrase comment sa marche */
-  .comment-sa-marche{
-    color: white;
+  .button{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    margin-left: 35%;
+    max-width: 450px;
+    height: 60px;
+    
+   }
+  .button a{
+    padding: 3%;
+    border-radius: 10px;
     background: #E35F0F;
-    font-weight: 700;
-    Width:200px;
-    Height:51px;
-    border-Radius:10px;
-    Font-family:Nunito;
-    font-weight:800;
-    Size:24px;
-    Line-height:34px;
-    margin-left: 550px;
-    text-align: center;
+    color: #FFFFFF;
+    font-family: Nunito;
+    font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+    
   }
 
   
