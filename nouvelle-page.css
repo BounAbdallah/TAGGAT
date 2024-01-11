@@ -1,11 +1,55 @@
-/*footer*/
-footer{
+body{
+    overflow-x:hidden ;
+}
+/* style du header */
+header{
+    Width:1504px;
+    Height:106px;
+    background: #1111118C;
+
+  }
+.background-image_header { 
+    background:rgba(0,0,0,0.6)url(./images/Rectangle31.png); 
+    background-size: cover;
+    background-position: center center;
+    width: 1300px;
+    height: 700px;
+    top: -1px;
+    background-blend-mode: darken;
+  }
+  
+  header img{
+    width: 164.03px;
+    height: 63px;
+    margin-left: 100px; 
+    
+  }
+  .titre-container{
+    font-family: Nunito;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 260px;
+    margin-left: 300px;
+    width: 705px;
+    height: 81.49px;
+    position: absolute;
+    color: white;
+
+  }
+  
+/*background image du header*/
+
+  footer{
     background: #1F1F1F;
     width: 100%;
     height: 300px;
     display: inline-block;
     justify-content: space-between;
     padding: 30px 5px;
+    margin-top: 580px;
   
   }
   .footer_principal {
@@ -33,7 +77,7 @@ footer{
   footer .logo{
     width: 185px;
     height: 75px;
-    margin-left: -40px;
+   margin-left: 60px;
    
     
   }
@@ -48,6 +92,7 @@ footer{
   width: 90%;
   text-align: center;
   margin-left: 30px;
+  margin-top: -50px;
   }
   .le_paragraphe_footer p{
    margin-top: 80px; 
@@ -132,3 +177,10 @@ text-align: center;
 margin-top: 60px;
 color: #FFFFFF;
   }
+  
+
+  
+
+
+
+  
