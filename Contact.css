@@ -43,7 +43,7 @@ body {
     box-shadow: -5px 10px 30px 0px #001D2C1A;
     background: #FFFFFF;
     height: 226px;
-    width: 70%;
+    width: 90%;
     margin: 2% auto 5% auto; /* Centre le conteneur horizontalement */
    padding: 20px; /* Ajoute un espace intérieur au conteneur */
    box-sizing: border-box; 
@@ -92,7 +92,7 @@ color: #666666;
   {
     padding: 8px;
     border: 1px solid #E1E1E1;
-    width: 300px;
+    width: 400px;
     height: 40px;
     padding: 16px, 31px, 17px, 31px;
     border-radius: 10px;
@@ -221,6 +221,14 @@ color: #FFFFFF;
     text-align: justified;
     color: #FFFFFF;
     width: 88%;
+  }
+  
+  .trait {
+    display: inline-block;
+    width: 30px; /* Ajuste la largeur du trait selon tes besoins */
+    border-bottom: 1px solid black; /* Couleur et style de la bordure */
+    margin-left: 5px; /* Ajuste la marge à gauche selon tes besoins */
+    background: #E35F0F;
   }
   
   form {
