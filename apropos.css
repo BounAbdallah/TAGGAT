@@ -1,3 +1,8 @@
+@import'header.css';
+@import'footer.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans:ital,opsz,wght@1,6..12,700&display=swap');
+
 :root{
     /* les couleurs global du site */
     --backrgound-body:#FFFFFF;
@@ -10,105 +15,83 @@
     --paragraphe-color:#000000;
     --footer-background-color:#3B3B3B;
     --police-titre-size:font-size: 48px;
+}
 
 body{
-    text-align: justify;
-font-family: Arial;
-}}
+  margin: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
 
-/* Style pour le header */
-header {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    width: 100%; 
-    height: 106px;
-    padding: 0; 
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5); 
-    position: absolute; 
-  }
-  /* Style pour le logo */
-  .logo img {
-    width: 164.03px;
-    height: 63px;
-    margin-left: 100px; 
-  }
-  /* Style pour la barre de navigation */
-  nav ul {
-    list-style: none; 
-    margin-right: 140px;
-    text-align: center;
-  }
-  nav ul li {
-    display: inline-block;
-    margin: 0 10px; 
-  }
-  nav ul li a {
-    text-decoration: none; 
-    color: #FFFFFF;
-    font-size: 16px; 
-    font-family: Nunito;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: right;
-    position: relative;
-  }
-  nav ul li a:hover,a.active  {
-    padding: 8px;
-  }
-  /* style de la section baner*/
-  .banner{
-    width: 100%;
-    height: 900px;
-    background-image: url(images/image-a-propos-de-nous.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .filter{
-    height: 900px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    align-items: center;
-  }
-  .texte h1{
-    font-weight: bolder;
-    text-align: center;
-    margin-top: 23%;
-    font-size: 55px;
-    color: #E35F0F;
 }
-.texte p{
-    color: white;
-    padding-top: 15px;
-    padding-bottom: 35px;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 23px;
-    font-style: normal;
-    font-weight: 400;
+
+ /*background image du header*/
+ .background-image_header {
+  background:rgba(0,0,0,0.6)url('./images/image-a-propos-de-nous.png'); 
+  background-size: cover;
+  background-position: center center;
+  width: 1500px;
+  height: 800px;
+  top: -1px;
+  background-blend-mode: darken;
 }
+/* le titre du header*/
+.titre-container{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+.titre-container h1 {
+  font-family: Nunito;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 300px;
+  margin-left: 350px;
+  width: 705px;
+  height: 81.49px;
+  position: absolute;
+  color: #E35F0F;
+  
+}
+.titre-container p{
+  color: #FFF;
+text-align: center;
+font-family: Arial;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: 51px; /* 159.375% */
+text-transform: capitalize;
+  margin-top: 400px;
+  margin-left: 200px;
+  width: 80%;
+  position: absolute;
+}
+
 /* style boutton contact*/
-.banner .button-contact{
-  color: white;
-font-size: 21px;
-margin-left: 45%;
-padding: 5px;
-border-radius: 8px;
-background-color: #E35F0F;
-font-weight: 800;
-width: 200px;
-height: 49px;
-flex-shrink: 0;
-a{
-    text-decoration: none;
-    color: white;
+.btn_nos_services{
+  border-radius: 10px;
+  background: var(--btn-background-color);
+  width: 180px;
+  height: 46px;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; 
+  margin-top: 550px;
+  margin-left: 45%;
+  width: 20%;
+  position: absolute;
+  
 }
+.btn_nos_services a{
+  text-decoration: none;
+  color: var(--color-paragraphe-blanc);
+  font-size: 15px;
+  font-family: arial;
+  font-weight: 700;
+  
 }
 /*code css de la section objectifs et vision */
 .objectifs-et-vision{
@@ -117,7 +100,8 @@ a{
     width: 100%;
     height: auto;
     background-color: var(--background-section-1-accueil);
-    p{
+}
+  .objectifs-et-vision p{
         width: 88%;
         color: #FFF;
         text-align: justify;
@@ -136,11 +120,12 @@ a{
     margin-left: 10%;
     padding-top: 10px;
     margin-bottom: 20px;
-    ul{
+}
+   .objectif ul{
         width: 80%;
     }
-}
-h1{
+
+.objectif  h1{
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -152,7 +137,7 @@ h1{
     font-weight: 700;
     line-height: 28px; /* 70% */
 }
-}
+
 .photo-objectif{
     width: 436px;
     height: 462px;
@@ -161,14 +146,14 @@ h1{
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
 }
-.image-objectif{
+.image-objectif
     h1{
         margin-left: -115px;
         padding-bottom: 25px;
         padding-top: 30px;
         padding-bottom: 40px;
     }
-}
+
 .texte-objectif{
     color: #FFF;
     margin-left: 90px;
@@ -178,9 +163,10 @@ h1{
     font-style: normal;
     font-weight: 400;
     line-height: 57px; /* 188% */
-    li{
-        padding-top: 30px;
-    }
+    
+}
+.texte-objectif li{
+  padding-top: 30px;
 }
 /* style de la partie vision */
 .vision{
@@ -197,13 +183,20 @@ h1{
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
 }
-.image-vision{
+.image-vision
     h1{
-        margin-left: -115px;
-        padding-bottom: 25px;
-        padding-top: 30px;
+      flex-direction: column;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #E35F0F;
+      text-align: center;
+      font-family: Nunito;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
     }
-}
+    
 .texte-vision{
     color: #FFF;
     text-align: justify;
@@ -212,11 +205,12 @@ h1{
     font-style: normal;
     font-weight: 400;
     line-height: 47px; /* 188% */
-    p{
-        width: 80%;
-        padding-top: 200px;
-        font-size: 23px;
-    }
+    
+}
+.texte-vision p{
+  width: 80%;
+  padding-top: 200px;
+  font-size: 23px;
 }
 .button-decouvrir{
     color: #FFF;
@@ -226,7 +220,7 @@ h1{
     margin-left: 50%;
     border-radius: 10px;
     background: #E35F0F;
-    width: 230px;
+    width: 300px;
     height: 50px;
     flex-shrink: 0;
     color: #FFF;
@@ -238,29 +232,34 @@ h1{
     text-transform: capitalize;
 }
 /* style de la section nos valeurs*/
-.valeurs{
+.valeurs
     h1{
         margin-left: 11%;
         padding-top: 55px;
     }
-    span{
-        color: #E35F0F;
-    }
+    
+.valeurs h1 span{
+  color: #E35F0F;
 }
 .nos-valeurs{
     display: flex;
     flex-direction: row;
-    p{
-        font-size: 20px;
-        line-height: 47px;
-        margin-bottom: 75px;
-        margin-left: 7%;
-    }
+}
+.nos-valeurs p{
+  font-size: 20px;
+  line-height: 47px;
+  margin-bottom: 75px;
+  margin-left: 7%;
 }
 .point-valeurs{
     display: flex;
     justify-content: space-evenly;
+    
 }
+.image-nos-valeurs img{
+  width: 100%;
+}
+
 .excellence, 
 .innovation,
 .empathie{
@@ -269,27 +268,33 @@ h1{
     flex-direction: column;
     width: 22%;
     box-shadow: 0px 0px 3px 4px rgba(98, 94, 94, 0.18);
-    h3{
-        color: rgba(39, 52, 139, 1);
-        font-size: 20px;
-        text-align: center;
-    }
-    p{
-        font-size: 20px;
-        margin: 5px;
-        margin-left: 10%;
-        width: 80%;
-        color: #333;
-        text-align: justify;
-        font-family: Inter;
-        font-size: 16.9px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 27px; /* 159.763% */
-    }
+    
+}
+.excellence h3, 
+.innovation h3,
+.empathie h3{
+  color: rgba(39, 52, 139, 1);
+  font-size: 20px;
+  text-align: center;
+}
+.excellence p, 
+.innovation p,
+.empathie 
+p{
+    font-size: 20px;
+    margin: 5px;
+    margin-left: 10%;
+    width: 80%;
+    color: #333;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 16.9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px; /* 159.763% */
 }
 /*style de la section sama digit */
-.sama-digit{
+.sama-digit
     h1{
         font-size: 35px;
         color: #E35F0F;
@@ -297,15 +302,15 @@ h1{
         margin-top: 8%;
         margin-bottom: 5%;
     }
-    p{
+.sama-digit   p{
         font-size: 20px;
         line-height: 47px;
         margin-bottom: 75px;
         margin-left: 2%;
     }
-}
+
 .photo-a-propos{
-    background-image: url(images/8\ 655\ 400+\ Abstrait\ Illustrations\,\ graphiques\ vectoriels\ libre\ de\ droits\ et\ Clip\ Art\ 1.png);
+  background:rgba(0,0,0,0.6)url('./images/fond_section_nos_services.png'); 
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -314,23 +319,45 @@ h1{
         font-size: 18px;
         text-align: center;
         color: #E35F0F;
-        span{
-            font-size: 15px;
-            color: rgba(154, 154, 154, 1);
-        }
+        background-blend-mode: darken;
     }
-    h3{
-        margin-left: 30%;
-        width: 40%;
-        color: #FFF;
+    .le_texte{
+      width: 70%;
+      height: 100%;
+      display: inline-block;
+      justify-content: center;
+      text-align: center;
+      margin-left: 200px;
+      
     }
-.sama-digit{
-    width: 100%;
-    margin: auto;
-    p{
-        width: 95%;
+    .le_texte .description{
+      font-family: Arial;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
     }
-}
+    .le_texte  .auteur span{
+      font-family: Nunito;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #E35F0F;  
+    }
+    .le_texte .auteur{
+      font-family: Arial;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:  #9A9A9A;
+    margin-top: 10px;
+    }
 .photo-formateurs{
     padding-top: 8%;
 
@@ -339,140 +366,3 @@ h1{
     border-radius: 50%;
     margin-left: -15px;
 }
-/*footer*/
-footer{
-    background: #1F1F1F;
-    width: 100%;
-    height: 300px;
-    display: inline-block;
-    justify-content: space-between;
-    padding: 30px 5px;
-  
-  }
-  .footer_principal {
-    display: flex;
-    justify-content: space-between; /* Pour espacer les éléments sur toute la largeur */
-    flex-wrap: wrap; /* Pour permettre le retour à la ligne si nécessaire */
-  }
-  
-  /* Styles pour chaque section */
-  .slogan,
-  .nav-bar_footer,
-  .contact_footer,
-  .social_media {
-    flex: 1; /* Chaque section prend autant d'espace disponible */
-    display: flex;
-    align-items: center; /* Alignement vertical */
-  }
-  
-  .slogan{
-    display: inline-block;
-    max-width: 25%;
-   
-    
-  }
-  footer .logo{
-    width: 185px;
-    height: 75px;
-    margin-left: -40px;
-   
-    
-  }
-  .le_paragraphe_footer{
-  font-family: Arial;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #FFFFFF;
-  width: 90%;
-  text-align: center;
-  margin-left: 30px;
-  }
-  .le_paragraphe_footer p{
-   margin-top: 80px; 
-  }
-
-  .nav-bar_footer{
-    max-width: 25%;
-    
-  }
-  
-  .nav-bar_footer ul {
-    list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  gap: 30px;
-  margin-left: 100px;
-margin-top: 60px;
-  }
-  
-  
-  .nav-bar_footer ul li a {
-    text-decoration: none; 
-    color: #FFFFFF;
-    font-family: Arial;
-font-size: 15px;
-font-weight: 400;
-line-height: 20px;  
-  }
-
-  .contact_footer{
-    display: inline-block;
-    max-width: 25%;
-    gap: 30px;
-    margin-top: 40px;
-  }
-  .contact_footer p{
-    font-family: Arial;
-font-size: 20px;
-font-weight: 400;
-line-height: 15px;
-letter-spacing: 0em;
-margin-left: 15px;
-color: #FFFFFF;
-
-  }
-  .contact_phone{
-    display: flex;
-  }
-  .contact_email{
-    display: flex;
-  }
-  .contact_google{
-    display: flex;
-    p{
-        margin-top: 0px;
-    }
-  }
-  
-  .social_media{
-    display: inline-block;
-    max-width: 25%;
-    margin-top: 60px;
-    margin-left: 20px;
-  }
-  .icons-reseaux{
-    display: flex;
-    gap: 20px;
-  }
-  .social_media p{
-    font-family: Arial;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 15px;
-    color: #FFFFFF;
-  }
-  .Copyright{
-font-family: Arial;
-font-size: 22px;
-font-weight: 900;
-line-height: 15px;
-text-align: center;
-margin-top: 60px;
-color: #FFFFFF;
-  }
