@@ -1,3 +1,8 @@
+@import'header.css';
+@import'footer.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans:ital,opsz,wght@1,6..12,700&display=swap');
+/*style du body*/
 :root{
     /* les couleurs global du site */
     --backrgound-body:#FFFFFF;
@@ -11,117 +16,57 @@
     --footer-background-color:#3B3B3B;
     --police-titre-size:font-size: 48px;
 }
-body{
-    margin: 0px;
-}
-/* / *Style pour la barre de navigation */ 
-  header{
-    margin: 0px;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(images/blog_img_background.png);
-    background-repeat: no-repeat;
+
+body {
+    margin: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+  }
+
+  /*background image du header*/
+  .background-image_header {
+    background:rgba(0,0,0,0.6)url('./images/blog_img_background.png'); 
     background-size: cover;
-    background-color: #000000;
+    background-position: center center;
+    width: 1500px;
+    height: 800px;
+    top: -1px;
+    background-blend-mode: darken;
   }
-  nav{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    width: 100%; 
-    max-width: 1504px; 
-    height: 106px;
-    padding: 0 0px; 
-    margin: 0 auto; 
-    
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-  }
-
-  
- 
-    .logo img {
-    width: 164.03px;
-    height: 63px;
-    margin-left: 100px;
-    }
-  /*Style pour la barre de navigation */
-  nav ul {
-    list-style: none; 
-    margin-right: 150px;
-    padding: 0;
-    text-align: center;
-  }
-
-  nav ul li {
+  /* le titre du header*/
+  .titre-container{
     display: inline-block;
-    margin: 0 10px; 
-  }
-
-  nav ul li a {
-    text-decoration: none; 
-    color: #FFFFFF;
-    font-size: 16px; 
-    font-family: Nunito;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: right;
-    position: relative;
-
-  }
-  nav ul li a:hover,a.active  {
-    border-bottom: 2px solid #E35F0F;
-    padding: 8px;
-  }
-  /* Code be la banniere */
-
-  .banniere{
-    padding-top: 200px;
-    padding-bottom: 10px;
-    flex-shrink: 0;
+    justify-content: center;
     align-items: center;
-    height: 798px;
   }
-  .banniere h1{
-    color: #E35F0F;
+  .titre-container h1 {
     font-family: Nunito;
     font-size: 64px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 60px; 
-    margin-left: 45%;
-
-}
-  .banniere span{
-    color: #E35F0F;
-font-family: Nunito;
-font-size: 64px;
-font-style: normal;
-font-weight: 700;
-line-height: 60px;
-  }
-  .banniere p{
-    color: #FFF;
+    line-height: 60px;
+    letter-spacing: 0em;
     text-align: center;
-    font-family: Arial;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 51px; /* 159.375% */
-    text-transform: capitalize;
-    margin-left: 300px;
-    margin-right: 299px;
+    margin-top: 300px;
+    margin-left: 350px;
+    width: 705px;
+    height: 81.49px;
+    position: absolute;
+    color: #E35F0F;
+    
   }
-  .btn_nos_services{
-    border-radius: 10px;
-    align-items: center;
-    display: flex;
-    background: var(--btn-background-color);
-    width: 180px;
-    height: 46px;
-    flex-shrink: 0;
-    /* margin-bottom: 278px; */
+  .titre-container p{
+    color: #FFF;
+text-align: center;
+font-family: Arial;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 51px; /* 159.375% */
+text-transform: capitalize;
+    margin-top: 400px;
+    margin-left: 270px;
+    width: 65%;
+    position: absolute;
   }
  
   .articles_contenaire{
@@ -216,8 +161,7 @@ line-height: 60px;
 
   .message{
     display: flex;
-    width: 1159px;
-    height: 219px;
+    width: 93%;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -226,7 +170,7 @@ line-height: 60px;
     color: #060606;
     text-align: justify;
     font-family: Arial;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 202.99%; /* 40.598px */
