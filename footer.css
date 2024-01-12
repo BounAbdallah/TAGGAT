@@ -2,7 +2,7 @@
 footer{
     background: #1F1F1F;
     width: 100%;
-    height: 300px;
+    height: auto;
     display: inline-block;
     justify-content: space-between;
     padding: 30px 5px;
@@ -132,3 +132,73 @@ text-align: center;
 margin-top: 60px;
 color: #FFFFFF;
   }
+  /*la responsivité*/
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+.footer_principal {
+  display: flex;
+  flex-wrap: wrap; /* Pour permettre le retour à la ligne si nécessaire */
+}
+
+
+ /* Styles pour chaque section */
+ .slogan,
+ .nav-bar_footer,
+ .contact_footer,
+ .social_media {
+  max-width: 60%;
+ } 
+ .nav-bar_footer ul {
+margin-top: 50px;
+}
+ .nav-bar_footer ul li a{
+  font-size: 16px;
+ }
+.contact_footer p, .le_paragraphe_footer, .Copyright{
+  font-size: 20px;
+}
+}
+/* Ajoutez ces styles pour le mode mobile */
+@media only screen and (max-width: 767px) {
+
+  .footer_principal {
+    flex-direction: column; /* Aligne les éléments en colonne */
+    
+  }
+  .slogan{
+    max-width: 100%;
+  }
+  footer .logo{
+    margin-left: 15%;
+  }
+  .le_paragraphe_footer p{
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 0;
+   }
+  
+  .nav-bar_footer,
+  .contact_footer,
+  .social_media {
+    display: inline-block;
+    justify-content: end;
+    max-width: 100%; /* Occupe toute la largeur */
+    margin: 8px;/* Ajoutez une marge inférieure entre les sections */
+    text-align: left; /* Aligne le texte à gauche */
+    margin-left: 20px;
+
+  }
+
+  .nav-bar_footer ul {
+  display: inline-block;
+  justify-content: end;
+  line-height: 50px;
+  margin-left:20px ;
+  margin: 8px;
+  }
+
+.lien_coaching p{
+  display: none;
+}
+
+}
