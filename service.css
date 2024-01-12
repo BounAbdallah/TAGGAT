@@ -31,12 +31,13 @@ body{
     font-weight: 700;
     line-height: 60px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     margin-top: 230px;
-    margin-left: 422px;
-    width: 705px;
+    width: 70%;
     height: 81.49px;
     position: absolute;
+    transform: translateX(-50%);
+    left: 50%; 
     color: #E35F0F;
 
   }
@@ -46,16 +47,14 @@ body{
     font-weight: 700;
     line-height: 60px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     margin-top: 300px;
-    margin-left: 422px;
-    width: 705px;
+    width: 70%;
     height: 81.49px;
     position: absolute;
+    left: 50%; 
+   transform: translateX(-50%);
     color: white;
-    
-
-
   }
 
 

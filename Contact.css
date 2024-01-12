@@ -12,7 +12,7 @@ body {
     background:rgba(0,0,0,0.6)url('./images/Rectangle-1-\(1\).png'); 
     background-size: cover;
     background-position: center center;
-    width: 1500px;
+    width: 100%;
     height: 800px;
     top: -1px;
   }
@@ -23,12 +23,13 @@ body {
     font-weight: 700;
     line-height: 60px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align:center;
     margin-top: 330px;
-    margin-left: 422px;
-    width: 705px;
+    width: 70%;
     height: 81.49px;
     position: absolute;
+    left: 50%; 
+   transform: translateX(-50%);
     color: #E35F0F;
   }
 
