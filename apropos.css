@@ -29,7 +29,7 @@ body{
   background:rgba(0,0,0,0.6)url('./images/image-a-propos-de-nous.png'); 
   background-size: cover;
   background-position: center center;
-  width: 1500px;
+  width: 100%;
   height: 800px;
   top: -1px;
   background-blend-mode: darken;
@@ -48,10 +48,11 @@ body{
   letter-spacing: 0em;
   text-align: center;
   margin-top: 300px;
-  margin-left: 350px;
-  width: 705px;
+  width: 70%;
   height: 81.49px;
   position: absolute;
+  left: 50%; 
+   transform: translateX(-50%);
   color: #E35F0F;
   
 }
@@ -65,9 +66,10 @@ font-weight: 400;
 line-height: 51px; /* 159.375% */
 text-transform: capitalize;
   margin-top: 400px;
-  margin-left: 200px;
   width: 80%;
   position: absolute;
+  left: 50%; 
+   transform: translateX(-50%);
 }
 
 /* style boutton contact*/
@@ -80,9 +82,10 @@ text-transform: capitalize;
   justify-content: center; /* Centre horizontalement */
   align-items: center; 
   margin-top: 550px;
-  margin-left: 45%;
   width: 20%;
   position: absolute;
+  left: 50%; 
+   transform: translateX(-50%);
   
 }
 .btn_nos_services a{
