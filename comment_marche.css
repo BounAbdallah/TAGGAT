@@ -645,24 +645,24 @@ margin-top: 10px;
    transform: translateX(-50%);
   }
   .content-text {
-    max-width: 65%;
-    margin-top: 1px;
-   
-   
+    max-width: 60%;
+    margin: 0;
+    align-items: center;
   }
  
   .content-text p {
-    font-size: 16px;
+    font-size: 12px;
     width: 80%;
-    line-height: 35px;
-    margin-top: 10px;
-    
-   
+    line-height: 30px;
+  
+   text-align: justify;
+   word-spacing: 6px; 
   }
   .content {
-    height: 867px;
+    height: 700px;
     flex-direction: column;
     align-items: center;
+ 
   }
   .content-image {
     width: 50%;
@@ -696,27 +696,47 @@ margin-top: 10px;
   .titre_coaching,
   .titre_ressources,
   .titre_evolution {
-    flex-direction: column;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
    
+  }
+  .titre_inscription .nombre, 
+  .titre_consultation .nombre, 
+  .titre_coaching .nombre, 
+  .titre_ressources .nombre, 
+  .titre_evolution .nombre{
+   font-size: 50px;
+  }
+  .titre_inscription h2, 
+   .titre_consultation h2, 
+   .titre_coaching h2,
+   .titre_ressources h2, 
+   .titre_evolution h2{
+    font-size: 30px;
+    line-height: 50px;
   }
   .ligne_conteneur {
     max-width: 100%;
     flex-direction: column;
-    margin: 5px; 
+    align-items: center;
+    gap: 20px;
   }
 
   .la_partie_texte {
-    max-width: 50%;
+    max-width: 70%;
     margin-left: 1%;
   }
   .la_partie_image{
     max-width: 35%;
+    display: flex;
+  justify-content: center;
   }
   
 
   .les_paragraphes p{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 30px;
     width: 100%;
