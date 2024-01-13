@@ -755,6 +755,12 @@ margin-top: 10px;
   .button {
     margin: 40px 0; /* Ajuster la marge pour mieux s'adapter aux petits écrans */
   }
+  .button a{
+    width: 270px;
+    height: 50px;
+    font-size: 24px;
+    
+  }
   /*equipe*/
   #equipe{
     display: none;
