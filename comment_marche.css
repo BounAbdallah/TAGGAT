@@ -26,11 +26,11 @@ body {
     line-height: 60px;
     letter-spacing: 0em;
     text-align: center;
-    margin-top: 369px;
     width: 70%;
-    height: 81.49px;
+    height: auto;
     position: absolute;
     left: 50%; 
+    top: 50%;
    transform: translateX(-50%);
     color: #F7F7F7;
 
@@ -69,12 +69,13 @@ body {
     word-spacing: 6px; 
     width: 90%;
     padding-top: 30px;
+    margin-left: 20px;
   }
   
   .content-image {
     flex: 1;
     width: 30%;
-    margin-left: 45px;
+    margin-left: 0;
    margin-top: -7%;
    
   }
@@ -82,7 +83,7 @@ body {
   .content-image img {
    
     display: block;
-    width: 264.42px;
+    width: 95%;
     height: 500px;
     
   }
@@ -162,7 +163,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
-    gap: 100px;
+    gap: 50px;
   }
 
   .les_paragraphes span{
@@ -535,3 +536,98 @@ text-align: center;
 color:  #9A9A9A;
 margin-top: 10px;
 }
+/*responsivité*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+ /*background image du header*/
+ .background-image_header {
+  height: 480px;
+  
+ }
+  .titre-container h1 {
+    font-size: 50px; /* Ajuster la taille de la police pour les écrans de 768px à 1023px */
+    line-height: 40px; /* Ajuster la hauteur de ligne en conséquence */
+    position: absolute;
+    left: 50%; 
+    top: 20%;
+   transform: translateX(-50%);
+  }
+ 
+  .content-text p {
+    
+    font-size: 18px;
+  }
+  .content {
+    height: 420px;
+  }
+  .content-image img {
+ 
+    height: 430px;
+    
+  }
+  
+   /*le style du titre de l'image */
+   .image_titre{
+   display: none;
+  }
+ 
+  /*inscription*/
+  .la_premiere_etape,
+  .la_deuxieme_etape,
+  .la_troisieme_etape,
+  .la_quatrieme_etape,
+  .la_cinquieme_etape {
+    margin: 0; /* Ajuster la marge pour mieux s'adapter aux petits écrans */
+  }
+
+  .titre_inscription,
+  .titre_consultation,
+  .titre_coaching,
+  .titre_ressources,
+  .titre_evolution {
+    display: flex; 
+    margin: 2%;
+   
+  }
+  .ligne_conteneur {
+    max-width: 100%;
+    display: flex;
+    margin: 5px; 
+  }
+
+  .la_partie_texte {
+    max-width: 50%;
+    margin-left: 1%;
+  }
+  .la_partie_image{
+    max-width: 35%;
+  }
+  
+
+  .les_paragraphes p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 100%;
+
+  }
+  .la_partie_image img{
+    width: 290px;
+    height: auto;
+  }
+  .les_paragraphes,
+  .titre_ressources .les_paragraphes,
+  .titre_evolution .les_paragraphes {
+    margin-top: 20px; /* Ajuster la marge supérieure pour mieux séparer les paragraphes sur les petits écrans */
+  }
+
+  .button {
+    margin: 40px 0; /* Ajuster la marge pour mieux s'adapter aux petits écrans */
+  }
+  /*equipe*/
+  #equipe{
+    display: none;
+  }
+ 
+}
+
+
