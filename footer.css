@@ -169,7 +169,7 @@ footer{
   .social_media {
   display: inline-block;
   justify-content: end;
-  width: 25%; /* Occupe toute la largeur */
+  width: 100%; 
   margin: 8px;/* Ajoutez une marge inférieure entre les sections */
   text-align: left; /* Aligne le texte à gauche */
   margin-left: 20px;
@@ -189,8 +189,8 @@ footer{
   display: none;
   }
   .contact_footer p{
-    
-    font-size: 18px;
+    font-size: 16px;
+    display: flex;
     }
     .nav-bar_footer ul li a {
 
