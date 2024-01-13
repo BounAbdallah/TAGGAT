@@ -285,3 +285,19 @@ margin-top: 30px;
     height: 500px;
   }
   
+
+  /* Media query pour les tablettes  */
+  @media only screen and (min-width: 768px) and (max-width: 1023px)  {
+    .background-image_header {
+      height: 400px;
+    
+    }
+    .titre-container h1 {
+    font-size: 50px; /* Ajuster la taille de la police pour les tablettes */
+    line-height: 40px; /* Ajuster la hauteur de ligne pour les tablettes */
+    position: absolute;
+    left: 50%; 
+    top: 13%;
+   transform: translateX(-50%);
+  }
+}
