@@ -3,41 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAGGAT</title>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
         <!-- La section header  -->
-          <div class="banniere">
-            <div class="contenu_banniere">
-              <h1>
-                Bienvenue sur <br>
-               <span>TAGGAT</span>, Votre porte d'accès au monde numérique. 
-            </h1>
-               <p>TAGGAT est là pour vous aider à développer vos compétences numériques, à élargir vos horizons et à prospérer dans un monde de plus en plus numérique</p>
-               <div class="btn_nos_services">
-                <a href="service.html">NOS SERVICES</a>
-               </div>
-            </div>
-          </div>
-          <header> 
+        <header>
+            <nav class="nav-desktop">
             <div class="logo">
               <img src="images/icons/logo.svg" alt="Logo de Taggat">
             </div>
-            <nav> 
+            
               <ul>
                 <li><a href="index.html" class="active">ACCUEIL</a></li>
                 <li><a href="service.html">SERVICES</a></li>
-                <li><a href="comment_marche.html" >COMMENT ÇA MARCHE</a></li>
+                <li><a href="comment-ca-marche.html"">COMMENT ÇA MARCHE</a></li>
                 <li><a href="blog.html">BLOG</a></li>
-                <li><a href="Contact.html">CONTACT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
               </ul>
             </nav>
+            <!-- FIN DU CODE DESKTOP -->
+            <!-- CODE TAB -->
+
+            <div class="navigation">
+              <div class="logo">
+                  <div class="logo">
+                      <img src="images/icons/logo.svg" alt="">
+                  </div>
+              </div>
+              
+              <nav class="navbar">
+                  <div class="recherche">
+                      <img class="icon-recherche" src="images/icons/recherche.svg" alt="">
+                      <div class="login">
+                          <p>Register <b>|</b> <span>Login</span>  </p>
+                      </div>
+                  </div>
+                  <ul>
+                      <li><a href="index.html" class="active">ACCUEIL</a></li>
+                      <li><a href="service.html">SERVICES</a></li>
+                      <li><a href="comment-ca-marche.html"">COMMENT ÇA MARCHE</a></li>
+                      <li><a href="blog.html">BLOG</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+              </nav>
+              <div class="menu-toggle">
+                  <div class="btn-nav">
+                      <img src="images/icons/icon-nav-mobil.svg" alt="">
+                  </div>
+              </div>
+          </div>
+
+            <!-- FIN CODE TAB -->
+      
+            <div class="banniere">
+                <h1>
+                     Bienvenue sur <br>
+                   <span>TAGGAT</span> , Votre porte d'accès <br> au monde numérique. 
+             </h1>
+                   <p>TAGGAT est là pour vous aider à développer vos compétences numériques, à élargir vos horizons et à prospérer dans un monde de plus en plus numérique</p>
+                   <div class="btn_nos_services">
+                    <a href="#">Nos services</a>
+                   </div>
+            </div>
            
         </header>
        <section class="section_c_q_Taggat">
@@ -55,28 +85,25 @@
                     Notre mission est de vous préparer à exceller dans l'univers numérique
                     en constante évolution.</p>
                     <div class="btn_savoir_plus">
-                        <a href="apropos.html">Découvrir plus</a>
+                        <a href="#">Découvrir plus</a>
                     </div>
             </div>
         
        </section>
-       <section id="communaute">
-        <div class="container">
-            <div class="content">
-              <div class="text-section">
-                <h2>Rejoignez notre large communauté</h2>
-                <p>Saisissez votre chance en apprenant des autres utilisateurs!</p>
-              </div>
-              <form class="form-section">
-                <div class="form-row">
-                  <input type="text" placeholder="Prénom et Nom">
-                  <input type="email" placeholder="Adresse email">
-                  <button type="submit">ENVOYER</button>
-                </div>
-              </form>
-            </div>
+    <section class="form_contact">
+        <div class="forme_txt_contenaire">
+            <h1>
+                 Rejoingnez notre large communauté 
+             </h1>
+            <p>Saisissez votre chance en apprenant des autres utilisateurs!</p>
         </div>
-          
+        <div class="form_contenaire">
+            <form>
+                <input class="input" type="text"  name="prenom" placeholder="Entrez votre prénom" required><br><br>
+                <input class="input"   placeholder="Entrez votre nom" required><br><br>
+                <input class="submit" type="submit" value="Rejoindre">
+            </form>
+        </div>
     </section>
 
     <section class="pourquoi_taggat">
@@ -126,9 +153,11 @@
         <h1>
              Nos <span> Services</span> 
          </h1>
+         <div class="offre">
         <p>TAGGAT offre un coaching numérique personnalisé, des ressources éducatives de qualité supérieure et des conseils pratiques pour permettre à chacun de prospérer dans un monde numérique en constante évolution.</p>
         <div class="voir_plus">
-            <a href="service.html">Voir plus</a>
+            <a href="">Voir plus</a>
+        </div>
         </div>
     </section>
 
@@ -148,16 +177,18 @@
             <a href="blog.html">Voir plus</a>
         </div>
     </section>
+
+ 
+
     
     <div class="taggat_vous_guide">
         
-        <p>Le Chemin vers la Réussite Numérique  <br> <span> TAGGAT  vous Guide</span></p>
+        <p>Le Chemin vers la Réussite Numérique <br> <span>  TAGGAT vous Guide</span></p>
         <div class="voir_plus">
-            <a href="Contact.html">Nous-contacter</a>
+            <a href="">Nous-contacter</a>
         </div>
     </div>    
     
-
 
     <!-- Code footer -->
 
@@ -175,10 +206,10 @@
   
           <div class="nav-bar_footer">
             <ul>
-              <li><a href="index.html">ACCUEIL</a></li>
-              <li><a href="service.html">SERVICES</a></li>
-              <li><a href="blog.html">BLOG</a></li>
-              <li><a href="Contact.html">CONTACT</a></li>
+              <li><a href="#accueil">ACCUEIL</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="blog.html">BLOC</a></li>
+              <li><a href="#contact">CONTACT</a></li>
             </ul>
           </div>
   
@@ -228,6 +259,6 @@
           Copyright@samadigital2023
         </div>
       </footer>
-
+<script src="app.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@ body{
 }
 /* style du header */
 header{
-    Width:1504px;
+    Width:100%;
     Height:106px;
     background: #1111118C;
 
@@ -19,7 +19,7 @@ header{
   }
   
   header img{
-    width: 164.03px;
+    width: 100%;
     height: 63px;
     margin-left: 100px; 
     
