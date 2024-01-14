@@ -36,19 +36,23 @@ body{
 }
 /* le titre du header*/
 .titre-container{
-  display: inline-block;
+display: inline-block;
   justify-content: center;
   align-items: center;
 }
 .titre-container h1 {
   font-family: Nunito;
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 60px;
   letter-spacing: 0em;
   text-align: center;
-  margin-top: 300px;
-  width: 70%;
+
+  margin-top: 250px;
+  margin-right: 100px;
+  width: 100%;
+
+
   height: 81.49px;
   position: absolute;
   left: 50%; 
@@ -57,19 +61,19 @@ body{
   
 }
 .titre-container p{
-  color: #FFF;
+color: #FFF;
+font-family: Nunito;
+font-size: 24px;
+font-weight: 500;
+line-height: 40px;
+letter-spacing: 0em;
 text-align: center;
-font-family: Arial;
-font-size: 28px;
-font-style: normal;
-font-weight: 400;
-line-height: 51px; /* 159.375% */
-text-transform: capitalize;
-  margin-top: 400px;
-  width: 80%;
-  position: absolute;
-  left: 50%; 
-   transform: translateX(-50%);
+margin-top: 370px;
+width: 100%;
+height: 81.49px;
+position: absolute
+
+
 }
 
 /* style boutton contact*/
@@ -82,7 +86,9 @@ text-transform: capitalize;
   justify-content: center; /* Centre horizontalement */
   align-items: center; 
   margin-top: 550px;
-  width: 20%;
+
+  margin-left: 45%;
+
   position: absolute;
   left: 50%; 
    transform: translateX(-50%);
@@ -91,7 +97,7 @@ text-transform: capitalize;
 .btn_nos_services a{
   text-decoration: none;
   color: var(--color-paragraphe-blanc);
-  font-size: 15px;
+  font-size: 20px;
   font-family: arial;
   font-weight: 700;
   
@@ -101,7 +107,7 @@ text-transform: capitalize;
     padding-top: 50px;
     margin-top: 0px;
     width: 100%;
-    height: auto;
+    padding-bottom: 90px;
     background-color: var(--background-section-1-accueil);
 }
   .objectifs-et-vision p{
@@ -125,7 +131,7 @@ text-transform: capitalize;
     margin-bottom: 20px;
 }
    .objectif ul{
-        width: 80%;
+        width: 90%;
     }
 
 .objectif  h1{
@@ -151,7 +157,7 @@ text-transform: capitalize;
 }
 .image-objectif
     h1{
-        margin-left: -115px;
+        margin-left: -140px;
         padding-bottom: 25px;
         padding-top: 30px;
         padding-bottom: 40px;
@@ -159,13 +165,14 @@ text-transform: capitalize;
 
 .texte-objectif{
     color: #FFF;
-    margin-left: 90px;
+    margin-left: 30px;
+    padding-top: 100px;
     text-align: justify;
     font-family: Arial;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 57px; /* 188% */
+    line-height: 47px; /* 188% */
     
 }
 .texte-objectif li{
@@ -189,7 +196,6 @@ text-transform: capitalize;
 .image-vision
     h1{
       flex-direction: column;
-      justify-content: center;
       flex-shrink: 0;
       color: #E35F0F;
       text-align: center;
@@ -198,6 +204,10 @@ text-transform: capitalize;
       font-style: normal;
       font-weight: 700;
       line-height: 28px;
+      margin-left: -140px;
+      padding-bottom: 25px;
+      padding-top: 30px;
+      padding-bottom: 40px;
     }
     
 .texte-vision{
@@ -211,19 +221,19 @@ text-transform: capitalize;
     
 }
 .texte-vision p{
-  width: 80%;
+  width: 90%;
   padding-top: 200px;
-  font-size: 23px;
+  font-size: 20px;
 }
 .button-decouvrir{
     color: #FFF;
     padding: 2px;
-    font-size: 20px;
-    margin-top: 50px;
-    margin-left: 50%;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-left: 43%;
     border-radius: 10px;
     background: #E35F0F;
-    width: 300px;
+    width: 250px;
     height: 50px;
     flex-shrink: 0;
     color: #FFF;
@@ -253,6 +263,7 @@ text-transform: capitalize;
   line-height: 47px;
   margin-bottom: 75px;
   margin-left: 7%;
+  margin-right: 5%;
 }
 .point-valeurs{
     display: flex;
@@ -318,8 +329,8 @@ p{
     background-size: cover;
     width: 100%;
     height: 700px;
-        margin-top: 10px;
-        font-size: 18px;
+        margin-top: 25px;
+        font-size: 16px;
         text-align: center;
         color: #E35F0F;
         background-blend-mode: darken;
@@ -334,11 +345,12 @@ p{
       
     }
     .le_texte .description{
-      font-family: Arial;
-    font-size: 26px;
+    font-family: Arial;
+    font-size: 22px;
     font-style: italic;
     font-weight: 400;
     line-height: 36px;
+    margin-top: 15px;
     letter-spacing: 0em;
     color: #FFFFFF;
     }
@@ -352,14 +364,14 @@ p{
       color: #E35F0F;  
     }
     .le_texte .auteur{
-      font-family: Arial;
+    font-family: Arial;
     font-size: 17px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
     color:  #9A9A9A;
-    margin-top: 10px;
+    margin-top: 20px;
     }
 .photo-formateurs{
     padding-top: 8%;
@@ -369,3 +381,586 @@ p{
     border-radius: 50%;
     margin-left: -15px;
 }
+
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+  
+body{
+  margin: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+
+ /*background image du header*/
+ .background-image_header {
+  background:rgba(0,0,0,0.6)url('./images/image-a-propos-de-nous.png'); 
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 600px;
+  top: -1px;
+  background-blend-mode: darken;
+}
+/* le titre du header*/
+.titre-container{
+display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+.titre-container h1 {
+  font-family: Nunito;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 223px;
+  width: 100%;
+  height: 81.49px;
+  position: absolute;
+  color: #E35F0F;
+}
+
+.titre-container p{
+    color: #FFF;
+text-align: center;
+font-family: Arial;
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px;
+text-transform: capitalize;
+  margin-top: 310px;
+  width: 100%;
+  position: absolute;
+}
+
+/* style boutton contact*/
+.btn_nos_services{
+  border-radius: 10px;
+  background: var(--btn-background-color);
+  width: 180px;
+  height: 46px;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; 
+  margin-top: 450px;
+  width: 20%;
+  position: absolute;
+  
+}
+
+.btn_nos_services a{
+  text-decoration: none;
+  color: var(--color-paragraphe-blanc);
+  font-size: 15px;
+  font-family: arial;
+  font-weight: 700;
+}
+
+/*code css de la section objectifs et vision */
+.objectifs-et-vision{
+    padding-top: 50px;
+    margin-top: 0px;
+    width: 100%;
+    padding-bottom: 60px;
+    background-color: var(--background-section-1-accueil);
+}
+
+  .objectifs-et-vision p{
+        width: 88%;
+        color: #FFF;
+        text-align: justify;
+        font-family: Arial;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 47px;
+        padding-top: 5px;
+}
+
+/* style de la partie objectifs */
+.objectif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+   .objectif ul{
+        width: 90%;
+    }
+
+.objectif  h1{
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #E35F0F;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 70% */
+}
+
+.photo-objectif{
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 20px;border-radius: 20px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.image-objectif
+    h1{
+        padding-bottom: 25px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+
+.texte-objectif{
+    color: #FFF;
+    text-align: justify;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 47px; /* 188% */
+    
+}
+
+.texte-objectif li{
+  padding-top: 30px;
+}
+
+/* style de la partie vision */
+.vision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-vision{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 20px;border-radius: 20px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.image-vision
+    h1{
+      flex-direction: column;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #E35F0F;
+      text-align: center;
+      font-family: Nunito;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+    }
+    
+.texte-vision{
+    color: #FFF;
+    text-align: justify;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 47px;
+}
+
+.texte-vision p{
+  width: 90%;
+  padding-top: 60px;
+  font-size: 20px;
+}
+
+.button-decouvrir{
+    color: #FFF;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 45px;
+    border-radius: 10px;
+    background: #E35F0F;
+    width: 205px;
+    height: 45px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 106.25% */
+    text-transform: capitalize;
+}
+
+/* style de la section nos valeurs*/
+.valeurs
+    h1{
+        margin-left: 11%;
+        padding-top: 55px;
+    }
+    
+.valeurs h1 span{
+  color: #E35F0F;
+}
+
+.nos-valeurs{
+    display: flex;
+    flex-direction: row;
+}
+
+.nos-valeurs p{
+  font-size: 20px;
+  line-height: 47px;
+  margin-bottom: 75px;
+}
+
+.point-valeurs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-nos-valeurs img{
+  width: 100%;
+}
+
+.excellence, 
+.innovation,
+.empathie{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 3px 4px rgba(98, 94, 94, 0.18); 
+}
+}
+}
+
+.excellence h3, 
+.innovation h3,
+.empathie h3{
+  color: rgba(39, 52, 139, 1);
+  font-size: 20px;
+  text-align: center;
+}
+
+.excellence p, 
+.innovation p,
+.empathie p{
+    font-size: 20px;
+    margin: 5px;
+    margin-left: 10%;
+    width: 80%;
+    color: #333;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 16.9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px; /* 159.763% */
+}
+
+/*style de la section sama digit */
+.sama-digit{
+  display: none;
+  }
+
+
+@media screen and (max-width:767px) {*
+  
+  body{
+    margin: 0;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+  
+   /*background image du header*/
+   .background-image_header {
+    background:rgba(0,0,0,0.6)url('./images/image-a-propos-de-nous.png'); 
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100px;
+    top: -1px;
+    background-blend-mode: darken;
+  }
+
+  /* le titre du header*/
+  .titre-container{
+  display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titre-container h1 {
+    font-family: Nunito;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 223px;
+    width: 100%;
+    height: 81.49px;
+    position: absolute;
+    color: #E35F0F;
+  }
+  
+  .titre-container p{
+      color: #FFF;
+  text-align: center;
+  font-family: Arial;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  text-transform: capitalize;
+    margin-top: 310px;
+    width: 100%;
+    position: absolute;
+  }
+  
+  /* style boutton contact*/
+  .btn_nos_services{
+    border-radius: 10px;
+    background: var(--btn-background-color);
+    width: 180px;
+    height: 46px;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; 
+    margin-top: 450px;
+    width: 20%;
+    position: absolute;
+    
+  }
+  
+  .btn_nos_services a{
+    text-decoration: none;
+    color: var(--color-paragraphe-blanc);
+    font-size: 15px;
+    font-family: arial;
+    font-weight: 700;
+  }
+  
+  /*code css de la section objectifs et vision */
+  .objectifs-et-vision{
+      padding-top: 50px;
+      margin-top: 0px;
+      width: 100%;
+      padding-bottom: 60px;
+      background-color: var(--background-section-1-accueil);
+  }
+  
+    .objectifs-et-vision p{
+          width: 88%;
+          color: #FFF;
+          text-align: justify;
+          font-family: Arial;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 47px;
+          padding-top: 5px;
+  }
+  
+  /* style de la partie objectifs */
+  .objectif{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px;
+      margin-bottom: 20px;
+  }
+     .objectif ul{
+          width: 90%;
+      }
+  
+  .objectif  h1{
+      flex-direction: column;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #E35F0F;
+      text-align: center;
+      font-family: Nunito;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px; /* 70% */
+  }
+  
+  .photo-objectif{
+      width: 100%;
+      height: auto;
+      flex-shrink: 0;
+      border-radius: 20px;border-radius: 20px;
+      background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+      box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .image-objectif
+      h1{
+          padding-bottom: 25px;
+          padding-top: 30px;
+          padding-bottom: 40px;
+      }
+  
+  .texte-objectif{
+      color: #FFF;
+      text-align: justify;
+      font-family: Arial;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 47px; /* 188% */
+      
+  }
+  
+  .texte-objectif li{
+    padding-top: 30px;
+  }
+  
+  /* style de la partie vision */
+  .vision{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .photo-vision{
+      width: 100%;
+      height: 100%;
+      flex-shrink: 0;
+      border-radius: 20px;border-radius: 20px;
+      background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+      box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .image-vision
+      h1{
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #E35F0F;
+        text-align: center;
+        font-family: Nunito;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+      }
+      
+  .texte-vision{
+      color: #FFF;
+      text-align: justify;
+      font-family: Arial;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 47px;
+  }
+  
+  .texte-vision p{
+    width: 90%;
+    padding-top: 60px;
+    font-size: 20px;
+  }
+  
+  .button-decouvrir{
+      color: #FFF;
+      align-items: center;
+      font-size: 18px;
+      margin-top: 45px;
+      border-radius: 10px;
+      background: #E35F0F;
+      width: 205px;
+      height: 45px;
+      flex-shrink: 0;
+      color: #FFF;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 106.25% */
+      text-transform: capitalize;
+  }
+  
+  /* style de la section nos valeurs*/
+  .valeurs
+      h1{
+          margin-left: 11%;
+          padding-top: 55px;
+      }
+      
+  .valeurs h1 span{
+    color: #E35F0F;
+  }
+  
+  .nos-valeurs{
+      display: flex;
+      flex-direction: row;
+  }
+  
+  .nos-valeurs p{
+    font-size: 20px;
+    line-height: 47px;
+    margin-bottom: 75px;
+  }
+  
+  .point-valeurs{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .image-nos-valeurs img{
+    width: 100%;
+  }
+  
+  .excellence, 
+  .innovation,
+  .empathie{
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin-bottom: 25px;
+      box-shadow: 0px 0px 3px 4px rgba(98, 94, 94, 0.18); 
+  }
+}
+}
+
+  .excellence h3, 
+  .innovation h3,
+  .empathie h3{
+    color: rgba(39, 52, 139, 1);
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .excellence p, 
+  .innovation p,
+  .empathie 
+  p{
+      font-size: 20px;
+      margin: 5px;
+      margin-left: 10%;
+      width: 80%;
+      color: #333;
+      text-align: justify;
+      font-family: Inter;
+      font-size: 16.9px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 27px; /* 159.763% */
+  }
+  
+  /*style de la section sama digit */
+  .sama-digit{
+    display: none;
+    }
