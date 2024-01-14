@@ -688,7 +688,7 @@ text-transform: capitalize;
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 100px;
+    height: 400px;
     top: -1px;
     background-blend-mode: darken;
   }
@@ -702,12 +702,12 @@ text-transform: capitalize;
 
   .titre-container h1 {
     font-family: Nunito;
-    font-size: 13px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0em;
     text-align: center;
-    margin-top: 223px;
+    margin-top: 150px;
     width: 100%;
     height: 81.49px;
     position: absolute;
@@ -718,12 +718,12 @@ text-transform: capitalize;
       color: #FFF;
   text-align: center;
   font-family: Arial;
-  font-size: 21px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 34px;
+  line-height: 28px;
   text-transform: capitalize;
-    margin-top: 310px;
+    margin-top: 200px;
     width: 100%;
     position: absolute;
   }
@@ -732,13 +732,12 @@ text-transform: capitalize;
   .btn_nos_services{
     border-radius: 10px;
     background: var(--btn-background-color);
-    width: 180px;
+    width: 200px;
     height: 46px;
     display: flex;
     justify-content: center; /* Centre horizontalement */
     align-items: center; 
-    margin-top: 450px;
-    width: 20%;
+    margin-top: 300px;
     position: absolute;
     
   }
@@ -746,7 +745,7 @@ text-transform: capitalize;
   .btn_nos_services a{
     text-decoration: none;
     color: var(--color-paragraphe-blanc);
-    font-size: 15px;
+    font-size: 12px;
     font-family: arial;
     font-weight: 700;
   }
@@ -765,10 +764,10 @@ text-transform: capitalize;
           color: #FFF;
           text-align: justify;
           font-family: Arial;
-          font-size: 20px;
+          font-size: 15px;
           font-style: normal;
           font-weight: 400;
-          line-height: 47px;
+          line-height: 22px;
           padding-top: 5px;
   }
   
@@ -777,57 +776,49 @@ text-transform: capitalize;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 10px;
-      margin-bottom: 20px;
   }
      .objectif ul{
           width: 90%;
       }
   
   .objectif  h1{
-      flex-direction: column;
-      justify-content: center;
-      flex-shrink: 0;
-      color: #E35F0F;
-      text-align: center;
-      font-family: Nunito;
-      font-size: 32px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 28px; /* 70% */
+      display: none;
+  }
+  .image-objectif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 0;
   }
   
   .photo-objectif{
-      width: 100%;
+      width: 60%;
       height: auto;
       flex-shrink: 0;
+     
       border-radius: 20px;border-radius: 20px;
       background: url(<path-to-image>), lightgray 50% / cover no-repeat;
       box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
   }
   
-  .image-objectif
-      h1{
-          padding-bottom: 25px;
-          padding-top: 30px;
-          padding-bottom: 40px;
-      }
+  
   
   .texte-objectif{
       color: #FFF;
       text-align: justify;
       font-family: Arial;
-      font-size: 20px;
+      font-size: 15px;
       font-style: normal;
       font-weight: 400;
-      line-height: 47px; /* 188% */
+      line-height: 22px; /* 188% */
+      margin-left: -20%;
+      width: 90%;
+      margin-top: -20%;
       
   }
   
-  .texte-objectif li{
-    padding-top: 30px;
-  }
-  
+ 
   /* style de la partie vision */
   .vision{
       display: flex;
@@ -836,49 +827,44 @@ text-transform: capitalize;
   }
   
   .photo-vision{
-      width: 100%;
-      height: 100%;
+      width: 60%;
+      height: auto;
       flex-shrink: 0;
       border-radius: 20px;border-radius: 20px;
       background: url(<path-to-image>), lightgray 50% / cover no-repeat;
       box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
   }
+  .image-vision{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 0;
+  }
   
   .image-vision
       h1{
-        flex-direction: column;
-        justify-content: center;
-        flex-shrink: 0;
-        color: #E35F0F;
-        text-align: center;
-        font-family: Nunito;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 28px;
+        display: none;
       }
       
-  .texte-vision{
-      color: #FFF;
-      text-align: justify;
-      font-family: Arial;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 47px;
-  }
   
   .texte-vision p{
     width: 90%;
-    padding-top: 60px;
-    font-size: 20px;
+    font-size: 15px;
+    color: #FFF;
+    text-align: justify;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
   }
   
   .button-decouvrir{
       color: #FFF;
       align-items: center;
-      font-size: 18px;
+      font-size: 15px;
       margin-top: 45px;
+      margin-left: 25%;
       border-radius: 10px;
       background: #E35F0F;
       width: 205px;
@@ -890,13 +876,13 @@ text-transform: capitalize;
       font-weight: 400;
       line-height: 24px; /* 106.25% */
       text-transform: capitalize;
+      border: none;
   }
   
   /* style de la section nos valeurs*/
   .valeurs
       h1{
-          margin-left: 11%;
-          padding-top: 55px;
+          display: none;
       }
       
   .valeurs h1 span{
@@ -909,15 +895,17 @@ text-transform: capitalize;
   }
   
   .nos-valeurs p{
-    font-size: 20px;
+    font-size: 15px;
     line-height: 47px;
     margin-bottom: 75px;
   }
   
   .point-valeurs{
       display: flex;
+      justify-content: center;
       flex-direction: column;
       align-items: center;
+      max-width: 70%;
   }
   
   .image-nos-valeurs img{
@@ -929,8 +917,11 @@ text-transform: capitalize;
   .empathie{
       height: auto;
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
-      width: 50%;
+      width: 80%;
+      margin-left: 40%;
       margin-bottom: 25px;
       box-shadow: 0px 0px 3px 4px rgba(98, 94, 94, 0.18); 
   }
@@ -949,17 +940,7 @@ text-transform: capitalize;
   .innovation p,
   .empathie 
   p{
-      font-size: 20px;
-      margin: 5px;
-      margin-left: 10%;
-      width: 80%;
-      color: #333;
-      text-align: justify;
-      font-family: Inter;
-      font-size: 16.9px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 27px; /* 159.763% */
+     display: none;
   }
   
   /*style de la section sama digit */
