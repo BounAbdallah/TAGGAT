@@ -63,7 +63,7 @@ body{
     background:rgba(0,0,0,0.6)url(./images/photo1.png); 
     background-size: cover;
     background-position: center center;
-    width: 1300px;
+    width: 100%;
     height: 700px;
     top: -1px;
     background-blend-mode: darken;
@@ -134,9 +134,8 @@ letter-spacing: 0.8px;
   /*  style de la section evaluation descompetences  */
   .section-evaluation-des-competences{
     display: flex;
-    Width:Hug 1,246px;
-    Height:Hug 201px;
-    Top:1383px;
+    Width:100%;
+    Height:Hug 201px;;
     Left:82px;
     Gap :64px ; 
     margin-top: 50px;
@@ -273,94 +272,144 @@ letter-spacing: 0.8px;
   text-decoration: none;
     
   }
-<<<<<<< HEAD
+ /* responsivité version tablette */
+ @media screen and (min-width: 768px) and (max-width:1023px){
   
-  .nav-bar_footer ul {
-    list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  gap: 30px;
-  margin-left: 100px;
-margin-top: 60px;
+  /*background image du header*/
+  .background-image_header {
+    height: 400px;
   }
-  
-  
-  .nav-bar_footer ul li a {
-    text-decoration: none; 
-    color: #FFFFFF;
-    font-family: Arial;
-font-size: 18px;
-font-weight: 400;
-line-height: 20px;  
+  /* le titre du header*/
+  .titre-container h1 {
+    font-size: 50px;
+    line-height: 40px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%; 
+    top: -6%;
   }
+  .numerique{
+    font-size: 28px;
+    line-height: 40px;
+    position: absolute;
+    left: 50%; 
+    top: -8%;
+   transform: translateX(-50%);
+    
+  }
+  .first-paragraphe{
+    width: 100%;
+    margin-left: 4%;
+    margin-top: 5%;
+    margin-right: 3%;
+   
+  }
+  .first-paragraphe p{
+    width: 90%;
+    font-size: 16px;
+    line-height: 28px;
+  }
+    /*style section accompagnement personnalisé  */
 
-  .contact_footer{
-    display: inline-block;
-    max-width: 25%;
-    gap: 30px;
-    margin-top: 40px;
-  }
-  .contact_footer p{
-    font-family: Arial;
-font-size: 24px;
-font-weight: 400;
-line-height: 15px;
-letter-spacing: 0em;
-margin-left: 15px;
-color: #FFFFFF;
-
-  }
-  .contact_phone{
-    display: flex;
-  }
-  .contact_email{
-    display: flex;
-  }
-  .contact_google{
-    display: flex;
-  }
+    .section-accompagnement{
+      display: flex;
+      gap: 40px;
+      margin-left: 20px;
+      margin-top: 40px;
+     
   
-  .social_media{
-    display: inline-block;
-    max-width: 25%;
-    margin-top: 60px;
-    margin-left: 20px;
-  }
-  .icons-reseaux{
-    display: flex;
-    gap: 20px;
-  }
-  .social_media p{
-    font-family: Arial;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 15px;
-    color: #FFFFFF;
-  }
-  .Copyright{
-font-family: Arial;
-font-size: 24px;
-font-weight: 900;
-line-height: 15px;
-text-align: center;
-margin-top: 60px;
-color: #FFFFFF;
-  }
-
-@media screen  and(max-width:1023px){
-    p{
-      font-size: 16px;
     }
+    
+  .section-accompagnement img,  .section-suivi-et-mesure-des-progres img, .section-de-bibliotheque-de-ressource-numerique img{
+    Width:330px;
+    Height:200px;
+    margin-left: 20px;
+    margin-top: 70px;
+  }
+  .section-evaluation-des-competences img,  .section-atelier-de-groupe-interactif img{
+    Width:330px;
+    Height:200px;
+    margin-right: 20px;
+    margin-top: 70px;
+  }
+  .second-paragraphe,  .quatrieme-paragraphe,  .paragraphe5{
+    margin-left: 0;
+    margin-top: 5px;
+   flex-direction: column;
+    gap: 10px;
+    width: 90%;
+  }
+  .titre1{
+    margin-left: -20%;
+  }
+  .titre3{
+    margin-left: -28%;
+  }
+  .titre5{
+    margin-left: 0;
+  }
+  .troixieme-paragraphe, .paragraphe4{
+    margin-left: 0;
+    margin-top: 5px;
+    flex-direction: column;
+    gap: 10px;
   }
   
+ 
+  .paragraphes{
+    margin-left: 0;
+    width: 95%;
+  }
+  .paragraphes p{
+    width: 85%;
+    font-size: 16px;
+    line-height: 20px; /* 160% */
+    word-spacing: 2px;
+    
+  }
+  .paragraphes ul{
+    margin-left: -6%;
+  }
 
-  
 
+  .numero-du-titre1  h3, .numero-du-titre2 h3, .numero-du-titre3 h3, .numero-du-titre4 h3, .numero-du-titre5 h3{
+    display: none;
+    
+  }
+  .titre1, .titre2, .titre3,.titre4,.titre5{
+    font-size: 18px;
+    
+  }
+  .titre2{
+    margin-left: 5%;
+    width: 100%;
+  }
+ 
+  .troixieme-paragraphe ul{
+    margin-left: 2%;
+    width: 100%;
 
-=======
->>>>>>> ab681905997407dd1358eea6eb5c01f5006702c8
+  }
+  .troixieme-paragraphe{
+    margin-top:40px;
+    width: 100%;
 
-  
+    
+  }
+  .troixieme-paragraphe .titre2{
+    color: #E35F0F;
+    font-weight: bold;
+    width: 100%;
+    
+  }
+   /* style de la phrase comment sa marche */
+   .button{
+    margin-left: 30%;
+    max-width: 400px;
+    
+   }
+  .button a{
+    font-size: 18px;
+  }
+
+ }
