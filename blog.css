@@ -28,7 +28,7 @@ body {
     background:rgba(0,0,0,0.6)url('./images/blog_img_background.png'); 
     background-size: cover;
     background-position: center center;
-    width: 1500px;
+    width: 100%;
     height: 800px;
     top: -1px;
     background-blend-mode: darken;
@@ -47,10 +47,11 @@ body {
     letter-spacing: 0em;
     text-align: center;
     margin-top: 300px;
-    margin-left: 350px;
-    width: 705px;
+    width: 70%;
     height: 81.49px;
     position: absolute;
+    left: 50%; 
+   transform: translateX(-50%);
     color: #E35F0F;
     
   }
@@ -136,16 +137,15 @@ text-transform: capitalize;
 
   /* code de la div image_article_reseaux */
 
-  .image_article_reseaux:first-child{
+  .image_article_reseaux:first-child, .image_article_reseaux2:first-child{
     width: 546px;
     height: 286px;
     flex-shrink: 0;
     margin-left: 12px;
   }
-  .image_article_reseaux{
+  .image_article_reseaux, .image_article_reseaux2{
     display: flex;
     flex-direction: row;
-
 
   }
   .reseaux{
@@ -159,14 +159,14 @@ text-transform: capitalize;
     margin-left: 25%;
   }
 
-  .message{
+  .message,.message2{
     display: flex;
     width: 93%;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
   }
-  .message p{
+  .message p,.message2 p{
     color: #060606;
     text-align: justify;
     font-family: Arial;
@@ -231,145 +231,163 @@ text-transform: capitalize;
 
 
 
-
-
-
-
-
-
-
-  /* Code footer */
-/*footer*/
-footer{
-    background: #1F1F1F;
-    width: 100%;
-    height: 300px;
-    display: inline-block;
-    justify-content: space-between;
-    padding: 30px 5px;
-  
+/* Media query pour les tablettes  */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .background-image_header {
+    height: 400px;
   }
-  .footer_principal {
-    display: flex;
-    justify-content: space-between; /* Pour espacer les éléments sur toute la largeur */
-    flex-wrap: wrap; /* Pour permettre le retour à la ligne si nécessaire */
+  .titre-container{
+    display: none;
   }
   
-  /* Styles pour chaque section */
-  .slogan,
-  .nav-bar_footer,
-  .contact_footer,
-  .social_media {
-    flex: 1; /* Chaque section prend autant d'espace disponible */
-    display: flex;
-    align-items: center; /* Alignement vertical */
-  }
-  
-  .slogan{
-    display: inline-block;
-    max-width: 25%;
-   
-    
-  }
-  footer .logo{
-    width: 185px;
-    height: 75px;
-    margin-left: -40px;
-   
-    
-  }
-  .le_paragraphe_footer{
-  font-family: Arial;
+  .titre h2, .titre2 h2, .titre2 span{ 
   font-size: 24px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #FFFFFF;
-  width: 90%;
-  text-align: center;
-  margin-left: 30px;
-  }
-  .le_paragraphe_footer p{
-   margin-top: 80px; 
-  }
+}
 
-  .nav-bar_footer{
-    max-width: 25%;
+.message p{
+  font-size: 16px;
+}
+.titre2 h2{
+  margin-left: -15%;
+}
+.titre2 p{
+  font-size: 20px;
+  margin-left: -15%;
+}
+
+.image-competence{
+  width: 340px;
+  height: 229px;
+}
+.image_article_reseaux2{
+  display: flex;
+  justify-content: end;
+  margin: 2%;
+}
+.message2{
+  display: flex;
+  justify-content: start;
+  max-width: 70%;
+  margin-top: -260px;
+}
+.message2 p{
+  font-size: 16px;
+  width: 80%;
+  margin-left: -17%;
+}
+.voir_plus{
+  width: 159px;
+  height: 41px;
+  margin-left: 370px;
+
+}
+.voir_plus a{
+ 
+  font-size: 15px;
+  
+}
+}
+
+
+
+/* Media query pour les tablettes  */
+@media only screen and (min-width: 0px) and (max-width: 767px){
+  .background-image_header {
+    height: 300px;
+  }
+  .titre-container{
+    display: none;
+  }
+  .articles_contenaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .image_article_reseaux,
+.message {
+  width: 100%;
+  text-align: center;
+}
+
+.image_article_reseaux img {
+  width: 90%;
+  height: auto;
+}
+
+.date_et_titre,
+.image_article_reseaux,
+.message {
+  margin-bottom: 0; /* Ajoutez une marge entre les éléments pour plus de clarté */
+}
+
+  .reseaux{
+    display: none;
+  }
+  
+  .titre h2, .titre2 h2, .titre2 span{ 
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   width: 100%;
+  }
+  .titre2 p{
+    font-size: 12px;
+    margin-left:0 ;
+  }
+  .message{
+   
+    justify-content: center;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  
+  .message p{
+    font-size: 12px;
+    width: 70%;
+  }
+ 
+  .image_article_reseaux, .image_article_reseaux2{
+    flex-direction: column;
+    align-items: center;
+  }
+  .message2{
+   
+    justify-content: center;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .message2 p{
+    font-size: 12px;
+    width: 70%;
+  }
+  
+  .date_et_titre,
+  .image_article_reseaux2,
+  .message2 {
+    width: 100%;
+    text-align: center; /* Centrer le contenu horizontalement */
+  }
+  .image_article_reseaux2,.image_article_reseaux{
+    margin-left: -25%;
+  }
+  
+  .image_article_reseaux2 img {
+    width: 90%; /* Assurez-vous que l'image prend toute la largeur disponible */
+    height: auto; /* Permet à la hauteur de s'ajuster automatiquement pour conserver les proportions de l'image */
+  }
+  
+  .voir_plus{
+    width: 150px;
+    height: 41px;
+   margin-left: 35%;
+  
+  
+  }
+  .voir_plus a{
+   
+    font-size: 12px;
     
   }
-  
-  .nav-bar_footer ul {
-    list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  gap: 30px;
-  margin-left: 100px;
-margin-top: 60px;
-  }
-  
-  
-  .nav-bar_footer ul li a {
-    text-decoration: none; 
-    color: #FFFFFF;
-    font-family: Arial;
-font-size: 18px;
-font-weight: 400;
-line-height: 20px;  
-  }
-
-  .contact_footer{
-    display: inline-block;
-    max-width: 25%;
-    gap: 30px;
-    margin-top: 40px;
-  }
-  .contact_footer p{
-    font-family: Arial;
-font-size: 24px;
-font-weight: 400;
-line-height: 15px;
-letter-spacing: 0em;
-margin-left: 15px;
-color: #FFFFFF;
-
-  }
-  .contact_phone{
-    display: flex;
-  }
-  .contact_email{
-    display: flex;
-  }
-  .contact_google{
-    display: flex;
-  }
-  
-  .social_media{
-    display: inline-block;
-    max-width: 25%;
-    margin-top: 60px;
-    margin-left: 20px;
-  }
-  .icons-reseaux{
-    display: flex;
-    gap: 20px;
-  }
-  .social_media p{
-    font-family: Arial;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 15px;
-    color: #FFFFFF;
-  }
-  .Copyright{
-font-family: Arial;
-font-size: 24px;
-font-weight: 900;
-line-height: 15px;
-text-align: center;
-margin-top: 60px;
-color: #FFFFFF;
-  }
+ 
+}
