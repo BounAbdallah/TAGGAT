@@ -1,4 +1,11 @@
 
+@import 'header.css';
+@import 'footer.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans:ital,opsz,wght@1,6..12,700&display=swap');
+
+
+
 @import './nav-bar-responsive.css';
 :root{
   /* les couleurs global du site */
@@ -14,6 +21,7 @@
   --police-titre-size:font-size: 48px;
 }
 body{
+
   margin: 0px;
 }
 /* / *Style pour la barre de navigation */ 
@@ -615,7 +623,6 @@ margin-left: 100px;
 margin-top: 60px;
 }
 
-
 .nav-bar_footer ul li a {
   text-decoration: none; 
   color: #FFFFFF;
@@ -728,15 +735,18 @@ margin-left: -10%;
     flex-shrink: 0;
     margin-left: 55%;
     height: 399px;
+
   }
   
   .banniere h1{
     color: var(--color-paragraphe-blanc);
     font-family: Nunito;
+
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 30px;
+
   }
   
   .banniere span{
@@ -746,9 +756,11 @@ margin-left: -10%;
     font-style: normal;
     font-weight: 700;
     line-height: 30px;
+
   }
   
   .banniere p{
+
     color: #FFF;
     font-family: Arial;
     font-size: 20px;
@@ -756,21 +768,28 @@ margin-left: -10%;
     font-weight: 400;
     line-height: 34px; /* 170% */
     text-transform: uppercase;
+
   }
   
   .btn_nos_services{
     border-radius: 10px;
-    align-items: center;
-    display: flex;
     background: var(--btn-background-color);
+
     width: 120px;
     height: 30px;
+
   }
   
   .btn_nos_services a{
     text-decoration: none;
+
     margin-left: 25px;
+
     color: var(--color-paragraphe-blanc);
+    font-size: 15px;
+    font-family: arial;
+    font-weight: 700;
+    
   }
   
   /* Code de la section section_c_q_Taggat */
@@ -839,6 +858,7 @@ margin-left: -10%;
   }
   
   /* Code de la section form_contact */
+
   
   .form_contact{
     margin: 25px;
@@ -851,11 +871,20 @@ margin-left: -10%;
   }
   
   .form_contenaire form{
+
     display: flex;
-    flex-direction: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px 10px 30px 0px #001D2C1A;
+    background: #FFFFFF;
+    height: 226px;
+    width: 90%;
+    margin: 2% auto 5% auto; /* Centre le conteneur horizontalement */
+   padding: 20px; /* Ajoute un espace intérieur au conteneur */
+   box-sizing: border-box; 
   }
   
+
   .forme_txt_contenaire{
     margin-left: 15%;
   }
@@ -896,6 +925,7 @@ margin-left: -10%;
     font-weight: 400;
     line-height: 36px;
     text-transform: uppercase;
+
   }
   
   /* Code section pourquoi_taggat */
@@ -1104,6 +1134,7 @@ margin-left: 50%;
   
   .article{
     display: flex;
+
     justify-content: space-around;
   }
   
@@ -1124,6 +1155,7 @@ margin-left: 50%;
     width: 50%;
     display: flex;
     margin-left: 30px;
+
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -1133,14 +1165,18 @@ margin-left: 50%;
     color: #000;
     text-align: justify;
     font-family: Arial;
+
     font-size: 18px;
+
     font-style: normal;
     font-weight: 400;
     line-height: 33.12px;
     text-transform: capitalize;
+
   }
   
   .section_blog .voir_plus{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1152,6 +1188,7 @@ margin-left: 50%;
     margin-right: 428.4px;
     margin-top: 72px;
     margin-bottom: 57px;
+
     border-radius: 10px;
     background: #E35F0F;
   }
@@ -1175,12 +1212,14 @@ margin-left: 50%;
   background-size:cover;
 }
 .taggat_vous_guide p{
+
   width: 100%;
   margin-left: 3%;
   margin-right: 3%;
   margin-top: 2%;
   margin-bottom: 2%;
   color: #FFF;
+
   text-align: center;
   font-family: Nunito;
   font-size: 28px;

@@ -12,7 +12,7 @@ body {
     background:rgba(0,0,0,0.6)url('./images/Rectangle-1-\(1\).png'); 
     background-size: cover;
     background-position: center center;
-    width: 1500px;
+    width: 100%;
     height: 800px;
     top: -1px;
   }
@@ -23,12 +23,13 @@ body {
     font-weight: 700;
     line-height: 60px;
     letter-spacing: 0em;
-    text-align: left;
-    margin-top: 330px;
-    margin-left: 422px;
-    width: 705px;
-    height: 81.49px;
+    text-align:center;
+    width: 70%;
+    height: auto;
     position: absolute;
+    left: 50%; 
+    top: 50%;
+   transform: translateX(-50%);
     color: #E35F0F;
   }
 
@@ -43,7 +44,7 @@ body {
     box-shadow: -5px 10px 30px 0px #001D2C1A;
     background: #FFFFFF;
     height: 226px;
-    width: 70%;
+    width: 100%;
     margin: 2% auto 5% auto; /* Centre le conteneur horizontalement */
    padding: 20px; /* Ajoute un espace intérieur au conteneur */
    box-sizing: border-box; 
@@ -92,22 +93,21 @@ color: #666666;
   {
     padding: 8px;
     border: 1px solid #E1E1E1;
-    width: 300px;
+    width: 400px;
     height: 40px;
-    padding: 16px, 31px, 17px, 31px;
     border-radius: 10px;
     font-family: Inter;
     font-size: 15px;
     font-weight: 300;
     line-height: 18px;
     letter-spacing: 0em;
+    margin: 5px;
 
 
   }
   button{
     width: 185px;
     height: 50px;
-    padding: 5px, 71.89px, 5px, 72.11px;
     border-radius: 10px;
     background: #E35F0F;
     color: #FFFFFF;
@@ -117,11 +117,12 @@ font-weight: 400;
 line-height: 40px;
 letter-spacing: 0em;
 text-align: center;
+margin: 5px;
 
   }
   /*formulaire*/
   #formulaire {
-    background:rgba(0,0,0,0.8)url('./images/Rectangle\ 3.png'); 
+    background:rgba(0,0,0,0.8)url('./images/fond_section_nos_services.png'); 
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -156,7 +157,7 @@ text-align: center;
     color: #FFFFFF;
 
   }
-  .row  .form_text span{
+  .row  .form_text span, .row .form_email span, .row .form_phone span, .row .form_google span{
     color: #E35F0F;
   }
   .row .form_text p{
@@ -223,6 +224,14 @@ color: #FFFFFF;
     width: 88%;
   }
   
+  .trait {
+    display: inline-block;
+    width: 30px; /* Ajuste la largeur du trait selon tes besoins */
+    border-bottom: 1px solid black; /* Couleur et style de la bordure */
+    margin-left: 5px; /* Ajuste la marge à gauche selon tes besoins */
+    background: #E35F0F;
+  }
+  
   form {
     display: flex;
     flex-direction: column;
@@ -276,3 +285,177 @@ margin-top: 30px;
     height: 500px;
   }
   
+
+  /* Media query pour les tablettes  */
+  @media only screen and (min-width: 768px) and (max-width: 1023px)  {
+    .background-image_header {
+      height: 400px;
+    
+    }
+    .titre-container h1 {
+    font-size: 50px; /* Ajuster la taille de la police pour les tablettes */
+    line-height: 40px; /* Ajuster la hauteur de ligne pour les tablettes */
+    position: absolute;
+    left: 50%; 
+    top: 13%;
+   transform: translateX(-50%);
+  }
+
+  input[type="text"],
+  input[type="email"]{
+    padding: 6px;
+    width:300px;
+    height: 30px;
+    border-radius: 25px;
+    line-height: 16px;
+    margin: 5px;
+    
+  }
+  button{
+    width: 30%;
+    height: 40px;
+    border-radius: 25px;
+    line-height: 20px;
+
+  }
+  .row h1, .row1 h1{
+    font-size: 24px;
+    line-height: 25px;
+  }
+  
+  .row .form_text p, .row1 .form_text p{
+    font-size: 16px;
+    line-height: 30px;
+    width: 100%;
+  }
+
+  .form_phone p,.form_email p, .form_google p{
+    font-size: 18px;
+  }
+  form{
+    margin-top: 50px;
+  }
+  .label textarea{
+    width: 350px;
+    height: 150px;
+    background-color: transparent; 
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+
+  }
+}
+ /* Media query pour les tablettes */
+@media only screen and (min-width: 0px) and (max-width: 767px){
+  /*background image du header*/
+  .background-image_header {
+  height: 300px;
+  }
+  .titre-container h1 {
+  font-size: 24px; /* Ajuster la taille de la police pour les écrans de 768px à 1023px */
+  line-height: 30px; /* Ajuster la hauteur de ligne en conséquence */
+  position: absolute;
+  left: 50%; 
+  top: 15%;
+  transform: translateX(-50%);
+  }
+  .container {
+   
+    margin:2%; /* Centre le conteneur horizontalement */
+ 
+  }
+  .form-section {
+    margin-left: 3%;
+  }
+  .text-section h2{
+    font-size: 15px;
+    }
+    .text-section p{
+    font-size: 12px;
+    }
+    #communaute input[type="text"],
+    #communaute input[type="email"]{
+    padding: 6px;
+    width:100%;
+    height: 25px;
+    border-radius: 25px;
+    line-height: 12px;
+    margin-left: 5%;
+    font-size: 12px;
+    }
+    button{
+    width: 30%;
+    height: 30px;
+    border-radius: 25px;
+    line-height: 20px;
+    font-size: 12px;
+    
+    }
+     /*formulaire*/
+  #formulaire {
+    width: 100%;
+    height: auto;
+  
+    
+  }
+  .conteneur {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Changez la direction à column */
+    align-items: center; /* Ajoutez cette ligne pour aligner verticalement au milieu */
+  }
+  .row .form_text, .row1 .form_text{
+    max-width: 100%;
+    height: 100%;
+    }
+  .row h1, .row1 h1{
+    font-size: 24px;
+    line-height: 28px;
+    text-align:center;
+    width: 100%;
+    
+    }
+    .row .form_text p, .row1 .form_text p{
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+
+      }
+      form {
+        margin-left: -55%;
+      }
+  
+      .form_phone p,.form_email p, .form_google p{
+        font-size: 16px;
+      }
+  .label label{
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
+  }
+  #formulaire input[type="text"],
+#formulaire input[type="email"]{
+padding: 6px;
+width:100%;
+height: 25px;
+border-radius: 10px;
+line-height: 15px;
+margin: 5px;
+display: flex;
+justify-content: start;
+}
+.label textarea{
+  width: 100%;
+  height: 150px;
+  background-color: #FFFFFF; 
+  border: 1px solid #000000;
+  color: #000000;
+  }
+
+}
