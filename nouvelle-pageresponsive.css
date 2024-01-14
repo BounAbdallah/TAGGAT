@@ -1,0 +1,206 @@
+body{
+    overflow-x:hidden ;
+}
+/* style du header */
+header{
+    Width:1504px;
+    Height:106px;
+    background: #1111118C;
+
+  }
+.background-image_header { 
+    background:rgba(0,0,0,0.6)url(./images/Rectangle31.png); 
+    background-size: cover;
+    background-position: center center;
+    width:1300px;
+    height: 700px;
+    top: -1px;
+    background-blend-mode: darken;
+  }
+  
+  header img{
+    width: 164.03px;
+    height: 63px;
+    margin-left: 100px; 
+    
+  }
+  .titre-container{
+    font-family: Nunito;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 260px;
+    margin-left: 300px;
+    width: 705px;
+    height: 81.49px;
+    position: absolute;
+    color: white;
+
+  }
+  
+/*background image du header*/
+
+  footer{
+    background: #1F1F1F;
+    width: 100%;
+    height: 300px;
+    display: inline-block;
+    justify-content: space-between;
+    padding: 30px 5px;
+  
+  }
+  .footer_principal {
+    display: flex;
+    justify-content: space-between; /* Pour espacer les éléments sur toute la largeur */
+    flex-wrap: wrap; /* Pour permettre le retour à la ligne si nécessaire */
+  }
+  
+  /* Styles pour chaque section */
+  .slogan,
+  .nav-bar_footer,
+  .contact_footer,
+  .social_media {
+    flex: 1; /* Chaque section prend autant d'espace disponible */
+    display: flex;
+    align-items: center; /* Alignement vertical */
+  }
+  
+  .slogan{
+    display: inline-block;
+    max-width: 25%;
+   
+    
+  }
+  footer .logo{
+    width: 185px;
+    height: 75px;
+   margin-left: 60px;
+   
+    
+  }
+  .le_paragraphe_footer{
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  width: 90%;
+  text-align: center;
+  margin-left: 30px;
+  margin-top: -50px;
+  }
+  .le_paragraphe_footer p{
+   margin-top: 80px; 
+  }
+
+  .nav-bar_footer{
+    max-width: 25%;
+    
+  }
+  
+  .nav-bar_footer ul {
+    list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 30px;
+  margin-left: 100px;
+margin-top: 60px;
+  }
+  
+  
+  .nav-bar_footer ul li a {
+    text-decoration: none; 
+    color: #FFFFFF;
+    font-family: Arial;
+font-size: 18px;
+font-weight: 400;
+line-height: 20px;  
+  }
+
+  .contact_footer{
+    display: inline-block;
+    max-width: 25%;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  .contact_footer p{
+    font-family: Arial;
+font-size: 24px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+margin-left: 15px;
+color: #FFFFFF;
+
+  }
+  .contact_phone{
+    display: flex;
+  }
+  .contact_email{
+    display: flex;
+  }
+  .contact_google{
+    display: flex;
+  }
+  
+  .social_media{
+    display: inline-block;
+    max-width: 25%;
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+  .icons-reseaux{
+    display: flex;
+    gap: 20px;
+  }
+  .social_media p{
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #FFFFFF;
+  }
+  .Copyright{
+font-family: Arial;
+font-size: 24px;
+font-weight: 900;
+line-height: 15px;
+text-align: center;
+margin-top: 60px;
+color: #FFFFFF;
+  }
+  /* responsivité */
+  /* le background image du header */
+  @media screen and (max-width:600px){
+  .background-image_header .titre-container{
+    margin-left: 60px;
+    font-size: 44px;
+    margin-bottom: -30px;
+  }
+  .background-image_header{
+      width: auto;
+      margin-top: -10px;
+      margin-left:-10px ;
+      margin-right: -10px;
+    }
+    header{
+     display: flex;
+    }
+
+   
+}
+
+  
+
+  
+
+
+
+  

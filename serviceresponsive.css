@@ -31,13 +31,12 @@ body{
     font-weight: 700;
     line-height: 60px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
     margin-top: 230px;
-    width: 70%;
+    margin-left: 422px;
+    width: 705px;
     height: 81.49px;
     position: absolute;
-    transform: translateX(-50%);
-    left: 50%; 
     color: #E35F0F;
 
   }
@@ -47,14 +46,16 @@ body{
     font-weight: 700;
     line-height: 60px;
     letter-spacing: 0em;
-    text-align: center;
+    text-align: left;
     margin-top: 300px;
-    width: 70%;
+    margin-left: 422px;
+    width: 705px;
     height: 81.49px;
     position: absolute;
-    left: 50%; 
-   transform: translateX(-50%);
     color: white;
+    
+
+
   }
 
 
@@ -63,10 +64,11 @@ body{
     background:rgba(0,0,0,0.6)url(./images/photo1.png); 
     background-size: cover;
     background-position: center center;
-    width: 1300px;
     height: 700px;
     top: -1px;
     background-blend-mode: darken;
+    width: 100%; /* Changer la largeur en 100% pour s'adapter à la largeur de l'écran */
+  
   }
   /* style de la  premiere paragraphe */
   .first-paragraphe{
@@ -273,94 +275,136 @@ letter-spacing: 0.8px;
   text-decoration: none;
     
   }
-<<<<<<< HEAD
-  
-  .nav-bar_footer ul {
-    list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  gap: 30px;
-  margin-left: 100px;
-margin-top: 60px;
-  }
-  
-  
-  .nav-bar_footer ul li a {
-    text-decoration: none; 
-    color: #FFFFFF;
-    font-family: Arial;
-font-size: 18px;
-font-weight: 400;
-line-height: 20px;  
-  }
-
-  .contact_footer{
-    display: inline-block;
-    max-width: 25%;
-    gap: 30px;
-    margin-top: 40px;
-  }
-  .contact_footer p{
-    font-family: Arial;
-font-size: 24px;
-font-weight: 400;
-line-height: 15px;
-letter-spacing: 0em;
-margin-left: 15px;
-color: #FFFFFF;
-
-  }
-  .contact_phone{
-    display: flex;
-  }
-  .contact_email{
-    display: flex;
-  }
-  .contact_google{
-    display: flex;
-  }
-  
-  .social_media{
-    display: inline-block;
-    max-width: 25%;
-    margin-top: 60px;
-    margin-left: 20px;
-  }
-  .icons-reseaux{
-    display: flex;
-    gap: 20px;
-  }
-  .social_media p{
-    font-family: Arial;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 15px;
-    color: #FFFFFF;
-  }
-  .Copyright{
-font-family: Arial;
-font-size: 24px;
-font-weight: 900;
-line-height: 15px;
-text-align: center;
-margin-top: 60px;
-color: #FFFFFF;
-  }
-
-@media screen  and(max-width:1023px){
-    p{
-      font-size: 16px;
+  /* responsivite */
+  /* pour tablette */
+  @media screen and (max-width:1023px){
+    li{
+      font-size:16px;
     }
+    
   }
+  /* pour mobile */
+  /* le background image header */
+ .background-image_header{
+  background-size: cover;
+ }
+ .background-image_header .titre-container{
+  margin-left: -380px;
+  margin-top: 100px;
+ }
+
+  /* section accompagnement */
+  @media only screen and (max-width: 600px) {
+    .section-accompagnement{
+      flex-wrap: wrap;
+    }
+    .section-accompagnement li{
+     margin-left: -100px; 
+     font-size: 18px;
+    }
+    .second-paragraphe .numero-du-titre1{
+      margin-top: -400px;
+    }
+    .paragraphes ul{
+      margin-top: 230px;
+      margin-left: -50px;
+    }
+   
+    .numero-du-titre1 h3{
+      margin-left: -100px;
+    }
+    .section-accompagnement img{
+      margin-left: 20px;
+
+    }
+    /* section evaluation des competences */
+    .section-evaluation-des-competences{
+      flex-wrap: wrap;
+    }
+    .section-evaluation-des-competences .numero-du-titre2{
+      margin-top: -100px;
+      margin-left: 12px;
+    }
+    .section-evaluation-des-competences li{
+      margin-left: -50px;
+      font-size:18px ;
+    }
+    .section-evaluation-des-competences img{
+      margin-top: -480px;
+      margin-left: 60px;
+    }
+    /*  section suivie et mesure des progres */
+    .section-suivi-et-mesure-des-progres{
+      margin-top: -35px;
+      flex-wrap: wrap;
+    }
+    .section-suivi-et-mesure-des-progres .numero-du-titre3{
+      margin-top: -360px;
+      margin-left: -20px;
+
+    }
+    .section-suivi-et-mesure-des-progres img{
+      margin-top: 50px;
+      margin-left:-30px ;
+    }
+    .section-suivi-et-mesure-des-progres ul{
+      margin-top: 240px;
+      margin-left: -150px;
+    }
+    .section-suivi-et-mesure-des-progres li{
+      font-size: 18px;
+    }
+    /* section atelier de groupe interactif */
+    .section-atelier-de-groupe-interactif{
+      flex-wrap: wrap;
+    }
+     .section-atelier-de-groupe-interactif img{
+      margin-left: -20px;
+      margin-top: -470px;
+
+     }
+     .section-atelier-de-groupe-interactif ul{
+      margin-left: -150px;
+     }
+     .section-atelier-de-groupe-interactif li{
+      font-size: 18px;
+     }
+     .section-atelier-de-groupe-interactif .numero-du-titre4{
+      margin-left: -30px;
+      margin-top: -50px;
+     }
   
+    /*  section bibliotheque de ressoure  numerique */
+    .section-de-bibliotheque-de-ressource-numerique{
+      flex-wrap: wrap;
+      margin-top: -10px;
+    }
+    .section-de-bibliotheque-de-ressource-numerique .numero-du-titre5{
+      margin-top: -360px;
+      margin-left: -40px;
+      
+    }
+    .section-de-bibliotheque-de-ressource-numerique img{
+      margin-top: 10px;
+      margin-left: 15px;
+    }
+    .section-de-bibliotheque-de-ressource-numerique ul{
+      margin-top: 230px;
+      margin-left: -150px;
+    }
+    .section-de-bibliotheque-de-ressource-numerique li{
+      font-size:18px ;
+    }
+    .button-inscription{
+      margin-left: -160px;
+    }
+   
 
+    
+
+   
+}
   
-
-
-=======
->>>>>>> ab681905997407dd1358eea6eb5c01f5006702c8
+    
 
   
