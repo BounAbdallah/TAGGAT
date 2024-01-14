@@ -1,0 +1,802 @@
+@import 'header.css';
+@import 'footer.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans:ital,opsz,wght@1,6..12,700&display=swap');
+
+:root{
+    /* les couleurs global du site */
+    --backrgound-body:#FFFFFF;
+    --color-paragraphe-blanc:#FFFFFF;
+    --color-paragraphe-noir: #000000;
+    --input-texte-color:rgba(0, 0, 0, 0.5);
+    --couleur-titre: #E35F0F;
+    --background-section-1-accueil: #27348B;
+    --btn-background-color: #E35F0F;
+    --paragraphe-color:#000000;
+    --footer-background-color:#3B3B3B;
+    --police-titre-size:font-size: 48px;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #FFFFFF;
+    
+}
+ /* Style pour le header  */
+
+   /* le titre du header*/
+   .titre-container h1 {
+    font-family: Nunito;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 230px;
+    margin-left: 422px;
+    width: 705px;
+    height: 81.49px;
+    position: absolute;
+    color: #E35F0F;
+
+  }
+  .numerique{
+    font-family: Nunito;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 300px;
+    margin-left: 422px;
+    width: 705px;
+    height: 81.49px;
+    position: absolute;
+    color: white;
+    
+
+
+  }
+
+
+  /*background image du header*/
+  .background-image_header {
+    background:rgba(0,0,0,0.6)url(./images/photo1.png); 
+    background-size: cover;
+    background-position: center center;
+    width: 1300px;
+    height: 700px;
+    top: -1px;
+    background-blend-mode: darken;
+  }
+  /* style de la  premiere paragraphe */
+  .first-paragraphe{
+    width: 75%;
+    margin: 2%;
+    margin-left: 15%;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: justify;
+    color: #000000;
+   
+
+  }
+  /*style section accompagnement personnalisé  */
+
+  .section-accompagnement{
+    display: flex;
+    gap: 66px;
+    margin-left: 70px;
+    margin-top: 40px;
+   
+
+  }
+  .section-accompagnement img{
+    Width:390px;
+    Height:200px;
+    margin-left: 50px;
+    margin-top: 70px;
+    
+  }
+  
+  .titre1{
+    color: #E35F0F;
+    font-weight: bold;
+    
+  }
+.second-paragraphe{
+    margin-top:40px
+
+  }
+  .numero-du-titre1 {
+    font-size: 25px;
+    color: #E35F0F;
+    margin-left: 80px;
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+    
+  }
+  .paragraphes{
+    margin-left: 20%;
+    width: 100%;
+    color: #000;
+text-align: justify;
+font-family: Arial;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 160% */
+letter-spacing: 0.8px;
+  }
+  /*  style de la section evaluation descompetences  */
+  .section-evaluation-des-competences{
+    display: flex;
+    Width:Hug 1,246px;
+    Height:Hug 201px;
+    Top:1383px;
+    Left:82px;
+    Gap :64px ; 
+    margin-top: 50px;
+}
+  .section-evaluation-des-competences img{
+    Width:390px;
+    Height:200px;
+    margin-left: 50px;
+    margin-top: 70px;
+  }
+  
+  .troixieme-paragraphe{
+    margin-top:40px
+    
+  }
+  .troixieme-paragraphe .titre2{
+    color: #E35F0F;
+    font-weight: bold;
+    
+  }
+  .numero-du-titre2{
+    font-size: 25px;
+    color: #E35F0F;
+    margin-left: 80px;
+   
+    display: flex;
+    gap: 30px;
+
+  }
+  /* style de la section  suivie et mesure des progres */
+  .section-suivi-et-mesure-des-progres{
+    display: flex;
+    gap: 66px;
+    margin-left: 70px;
+    margin-top: 40px;
+  }
+  .section-suivi-et-mesure-des-progres img{
+    Width:390px;
+    Height:200px;
+    margin-left: 50px;
+    margin-top: 70px;
+
+  }
+ 
+  .section-suivi-et-mesure-des-progres .numero-du-titre3{
+    font-size: 25px;
+    color: #E35F0F;
+    margin-left: 80px;
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+  }
+  .section-suivi-et-mesure-des-progres .titre3{
+    color: #E35F0F;
+    font-weight: bold;
+  }
+  
+  /* style de la section  atelier de groupe interactif*/
+  .section-atelier-de-groupe-interactif{
+    display: flex;
+    gap: 66px;
+    margin-left: 70px;
+    margin-top: 40px;
+  }
+  
+  .numero-du-titre4{
+    font-size: 25px;
+    color: #E35F0F;
+    margin-left: 80px;
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+  }
+  .section-atelier-de-groupe-interactif img{
+    Width:390px;
+    Height:200px;
+    margin-left: 50px;
+    margin-top: 70px;
+
+  }
+ 
+  .section-atelier-de-groupe-interactif .titre4{
+    color: #E35F0F;
+    font-weight: bold;
+  }
+  /* style de la section bibliotheque de ressoure  numerique */
+  .section-de-bibliotheque-de-ressource-numerique{
+    display: flex;
+    gap: 66px;
+    margin-left: 70px;
+    margin-top: 40px;;
+
+  }
+  .numero-du-titre5{
+    font-size: 25px;
+    color: #E35F0F;
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .section-de-bibliotheque-de-ressource-numerique img{
+    Width:390px;
+    Height:200px;
+    margin-left: 50px;
+    margin-top: 70px;
+  }
+  
+  .section-de-bibliotheque-de-ressource-numerique .titre5{
+    color: #E35F0F;
+    font-weight: bold;
+
+  }
+  /* style de la phrase comment sa marche */
+  .button{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    margin-left: 35%;
+    max-width: 450px;
+    height: 60px;
+    
+   }
+  .button a{
+    padding: 3%;
+    border-radius: 10px;
+    background: #E35F0F;
+    color: #FFFFFF;
+    font-family: Nunito;
+    font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+    
+  }
+  /* responsivité version tablette */
+  @media screen and (max-width:1206px){
+    .background-image_header{
+      background-size: cover;
+      width: 100%;
+    }
+    .titre-container{
+      margin-left: -100px;
+    }
+  }
+  @media screen and (max-width:1060px){
+    .section-accompagnement img{
+      margin-left: -30px;
+      margin-top: 150px;
+
+    }
+    .section-accompagnement ul{
+      margin-left: -100px;
+
+    }
+    .section-evaluation-des-competences ul{
+      margin-left: -100px;
+    }
+    .section-evaluation-des-competences img{
+      margin-left: -40px;
+    }
+    .section-evaluation-des-competences .numero-du-titre2{
+      margin-left: 30px;
+    }
+    .section-suivi-et-mesure-des-progres img{
+      margin-left: -30px;
+    }
+    .section-suivi-et-mesure-des-progres ul{
+      margin-left: -135px;
+    }
+    .section-suivi-et-mesure-des-progres  .numero-du-titre3{
+      margin-left: -50px;
+    }
+    .section-atelier-de-groupe-interactif .paragraphe4{
+      margin-left: -180px;
+
+    }
+    .numero-du-titre4{
+      margin-left: 130px;
+    }
+    .section-de-bibliotheque-de-ressource-numerique img{
+      margin-left: -50px;
+    }
+    .paragraphe5{
+      margin-left: -150px;
+    }
+    .numero-du-titre5{
+      margin-left: 100px;
+    }
+
+  }
+  @media screen and (max-width:954px){
+    .titre-container{
+      margin-left: -200px;
+    }
+
+  }
+  /* le background image du header  */
+   @media  screen and (max-width:768px) { 
+    .background-image_header{
+            height: 400px;
+            width: 100%; 
+        }
+        .titre-container h1 {
+            margin-left: 400px;
+            margin-top: 150px;
+            font-size: 39px;
+            }        
+        
+        .numerique {
+           margin-left: 400px;
+           margin-top: 180px;
+           font-size: 25px;
+        }
+        .first-paragraphe{
+          margin-left: 65px;
+          font-size: 16px;
+        }
+         /* section accompagnement */
+        .section-accompagnement{
+          flex-direction: row;
+          gap: 0px;
+          margin-top: -50px;
+          margin-left: 100px;
+        }
+        .section-accompagnement img{
+          margin-left: -60px;
+          width: 270px; 
+          height:200px ;
+          margin-top: 140px;
+        }
+        .second-paragraphe{
+          margin-left: -100px;
+        }
+        .second-paragraphe .numero-du-titre1{
+          font-size: 17px;
+
+        }
+      .paragraphes ul{
+        font-size: 15px;
+        max-width: 300px;
+        margin-left: 40px;
+      }
+      .numero-du-titre1 {
+        margin-left: 150px;
+      }
+      /* section  evaluation  de competence numerique */
+      .section-evaluation-des-competences{
+        flex-wrap: nowrap;
+        gap: 0px;
+        margin-top: 10px;
+        margin-left: 100px;
+
+      }
+      .numero-du-titre2 {
+        font-size:17px ;
+        margin-left: 05px;
+    } 
+    .section-evaluation-des-competences ul{
+      margin-left: -100px;
+      max-width: 300px;
+    }
+    .troixieme-paragraphe{
+      margin-left: -50px;
+    }
+  
+    .section-evaluation-des-competences img{
+       width: 270px; 
+      height:200px ;
+      margin-left: 52px;
+      margin-top: 120px;
+    }
+    /* section suivie et mesure des progres */
+    .section-suivi-et-mesure-des-progres{
+      flex-wrap: nowrap;
+      gap: 0px;
+      margin-left: 100px;
+    }
+    .section-suivi-et-mesure-des-progres img{
+      width: 270px; 
+      height:200px ;
+      margin-left: -50px;
+      margin-top: 80px;
+
+    }
+    .quatrieme-paragraphe .numero-du-titre3{
+      font-size: 17px;
+      margin-top: 30px;
+      margin-left: 35px;
+    }
+    .section-suivi-et-mesure-des-progres ul{
+      margin-left: -50px;
+    }
+    .quatrieme-paragraphe h3{
+      color: #E35F0F;
+      top: -100px;
+    }
+    /* section atelier de groupe interactif */
+    .section-atelier-de-groupe-interactif{
+    flex-wrap: nowrap;
+    margin-left: 250px;
+
+   } 
+   .section-atelier-de-groupe-interactif ul{
+    margin-left: -100px;
+   }
+   .numero-du-titre4{
+    font-size: 17px;
+    margin-left: -40px;
+   }
+   .section-atelier-de-groupe-interactif img{
+    width: 270px; 
+      height:200px ;
+      margin-top: 100px;
+
+   }
+   /* section bibliotheque de ressoure  numerique */
+   .section-de-bibliotheque-de-ressource-numerique{
+    flex-wrap: nowrap;
+   }
+   .section-de-bibliotheque-de-ressource-numerique img{
+    width: 270px; 
+      height:200px ;
+      margin-left: -30px;
+
+   }
+   .section-de-bibliotheque-de-ressource-numerique .numero-du-titre5 {
+    font-size:17px ;
+    margin-left: -30px;
+
+   }
+   .section-de-bibliotheque-de-ressource-numerique ul{
+    margin-left: -70px;
+   }
+   .paragraphe5{
+    margin-left: -30px;
+   }
+   /* le boutton comment sa marche */
+   .button{
+    margin-left: 130px;
+   }
+    }
+    @media screen and (max-width:728px) {
+      .section-evaluation-des-competences img{
+        position: absolute;
+        margin-left: 300px;
+      }
+      .section-de-bibliotheque-de-ressource-numerique .paragraphe5{
+        margin-left: -90px;
+
+      }
+      .section-de-bibliotheque-de-ressource-numerique .numero-du-titre5{
+        margin-left: 20px;
+      }
+      .section-de-bibliotheque-de-ressource-numerique img{
+        margin-top: 100px;
+        margin-left: -25px;
+      }
+      .section-atelier-de-groupe-interactif{
+        margin-left: 240px;
+      }
+      .section-accompagnement ul{
+        margin-left: 80px;
+      }
+  
+    }
+   
+    @media screen and (max-width:680px) {
+     .section-accompagnement img{
+        width: 230px;
+        height: 150px;
+        margin-top: 160px;
+      }
+      .section-suivi-et-mesure-des-progres img{
+        margin-top: 200px;
+      }
+      
+      .section-atelier-de-groupe-interactif img{
+        width: 230px;
+        height: 150px;
+        margin-left: 20px;
+        margin-left: -150px;
+
+      }
+      .section-atelier-de-groupe-interactif ul{
+        margin-left: 190px;
+      }
+      .section-atelier-de-groupe-interactif{
+        margin-left: 230px;
+      }
+      .section-atelier-de-groupe-interactif  .numero-du-titre4{
+        position: relative;
+        margin-left: 230px;
+      }
+      .section-de-bibliotheque-de-ressource-numerique img{
+        width: 230px;
+        height: 150px;
+
+      }
+      
+    }
+    @media screen and (max-width:646px){
+      .first-paragraphe{
+        font-size:13px ;
+      }
+     .paragraphes ul{
+      font-size: 14px;
+     letter-spacing: -0.4px 
+     } 
+     
+    }
+    /* version mobile */
+   
+    @media screen and (max-width:636px){
+      .first-paragraphe{
+        font-size: 16px;
+      }
+      .titre-container{
+        margin-left: -50px;
+      }
+      .titre-container .numerique {
+        font-size: 22px;
+
+      }
+      /* section accompagnement */
+      .section-accompagnement{
+        flex-direction: column;
+      }
+      .section-accompagnement .numero-du-titre1{
+        margin-top: -350px;
+        font-size: 25px;
+        margin-left: 50px;
+
+      }
+      .section-accompagnement ul{
+        margin-top: 250px;
+        font-size: 16px;
+        max-width: 100%;
+        margin-left: -50px;
+        letter-spacing: 0.1px 
+      }
+      .section-accompagnement img{
+        Width:390px;
+        Height:200px;
+        margin-left: -10px;
+
+      }
+      .second-paragraphe{
+        width: 100%;
+      }
+      /*  section evaluation  de competence numerique */
+      .section-evaluation-des-competences{
+        flex-direction: column;
+      }
+      .section-evaluation-des-competences img{
+        margin-top: 80px;
+        margin-left: -30px;
+        Width:390px;
+        Height:200px;
+      }
+      .section-evaluation-des-competences ul{
+        margin-top: 230px;
+        font-size: 16px;
+        max-width: 100%;
+        margin-left: -126px;
+        letter-spacing: 0.1px 
+      }
+      .section-evaluation-des-competences .numero-du-titre2{
+        font-size: 25px;
+        margin-top: -55px;
+        margin-left: -28px;
+
+      }
+      /*  section suivie et mesure des progres */
+      .section-suivi-et-mesure-des-progres{
+        flex-direction: column;
+        margin-top: -90px;
+      }
+      .section-suivi-et-mesure-des-progres .quatrieme-paragraphe .titre3{
+        font-size: 25px;
+        margin-top:-40px;
+      }
+      .section-suivi-et-mesure-des-progres h4{
+        font-size: 25px;
+      }
+      .section-suivi-et-mesure-des-progres .quatrieme-paragraphe {
+        margin-top: -350px;
+        font-size: 25px;
+        margin-bottom: -10px;
+        margin-left: -15px;
+      }
+      .section-suivi-et-mesure-des-progres ul{
+        margin-top: 300px;
+        font-size: 16px;
+        max-width: 100%;
+        letter-spacing: 0.1px;
+        margin-left: -170px; 
+      }
+      .section-suivi-et-mesure-des-progres img{
+        Width:390px;
+        Height:200px;
+        margin-left: -30px;
+       margin-bottom: 30px;
+
+      }
+      /* section atelier de groupe interactif */
+      .section-atelier-de-groupe-interactif{
+        flex-direction: column;
+        margin-top: -20px;
+      }
+      .paragraphe4 ul{
+        margin-left: -120px;
+        margin-top: 260px;
+        font-size: 16px;
+        max-width: 100%;
+        
+      }
+      .paragraphe4 .numero-du-titre4{
+        font-size: 25px;
+        margin-left: -10px;
+      }
+      
+      .section-atelier-de-groupe-interactif img{
+        margin-top: -500px;
+        Width:390px;
+        Height:200px;
+      }
+     
+     
+      /*section bibliotheque de ressoure  numerique   */
+      .section-de-bibliotheque-de-ressource-numerique{
+        flex-direction: column;
+        
+      }
+      .section-de-bibliotheque-de-ressource-numerique img{
+        margin-top: 300px;
+        Width:390px;
+        Height:200px;
+        margin-left: -5px;
+      }
+      .section-de-bibliotheque-de-ressource-numerique .numero-du-titre5{
+        position: relative;
+        margin-top: -360px;
+        font-size: 25px;
+        margin-left: 45px;
+      }
+      .paragraphe5 ul{
+        margin-top: 250px;
+        font-size: 16px;
+        max-width: 100%;
+        letter-spacing: 0.1px;
+        margin-left: -70px;
+      }
+      /* le boutton comment sa marche */
+      .button{
+        margin-left: 30px;
+      }
+    }
+    @media screen and (max-width:614px){
+      .titre-container{
+        margin-left: -250px;
+      }
+    }
+    @media screen and (max-width:520px){
+      .titre-container{
+        margin-left: -90px;
+      }
+      .paragraphes ul {
+        font-size: 14px;
+      }
+    }
+    @media screen and (max-width:504px){
+      .titre-container{
+        margin-left: -100px;
+      }
+      .section-accompagnement img{
+        width: 300px;
+        height: 150px;
+        margin-bottom: 70px;
+      
+      }
+      .second-paragraphe .numero-du-titre1{
+        font-size: 20px;
+      }
+      .second-paragraphe ul{
+        margin-bottom:50px;
+        letter-spacing:-0.1px ;
+        margin-top: 190px;
+      }
+      .section-evaluation-des-competences img{
+        width: 300px;
+        height: 150px;
+
+      }
+      .section-evaluation-des-competences .numero-du-titre2{
+        font-size: 20px;
+
+      }
+      .troixieme-paragraphe ul{
+        margin-bottom: 30px;
+      }
+      .section-suivi-et-mesure-des-progres img{
+        width: 300px;
+        height: 150px;
+
+      }
+      .section-suivi-et-mesure-des-progres h3{
+        margin-top: -500px;
+      }
+      .section-suivi-et-mesure-des-progres .numero-du-titre3{
+        font-size: 20px;
+        margin-top: -300px;
+      }
+      
+      .quatrieme-paragraphe ul{
+        margin-left: -150px;
+        margin-top: 205px;
+      }
+        .section-atelier-de-groupe-interactif img{
+          width: 300px;
+          height: 150px;
+
+        }
+        .section-atelier-de-groupe-interactif .numero-du-titre4{
+          font-size: 20px;
+        }
+        .paragraphe4 ul{
+          margin-bottom: 50px;
+          
+        }
+        .section-de-bibliotheque-de-ressource-numerique img{
+          width: 300px;
+          height: 150px;
+          margin-bottom: 40px;
+
+        }
+        .section-de-bibliotheque-de-ressource-numerique .numero-du-titre5{
+          font-size: 20px;
+        }
+        
+       
+    }
+   
+  
+   
+
+    
+     
+   
+     
+   
+
+   
+ 
+   
+  
+     
+
+
+
+  
