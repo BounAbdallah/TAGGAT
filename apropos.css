@@ -87,7 +87,7 @@ position: absolute
   align-items: center; 
   margin-top: 550px;
 
-  margin-left: 45%;
+  margin-left: 0;
 
   position: absolute;
   left: 50%; 
@@ -383,12 +383,12 @@ p{
 }
 
 
-@media screen and (min-width: 768px) and (max-width:1024px){
+@media screen and (min-width: 768px) and (max-width:1023px){
   
 body{
   margin: 0;
   background-color: #FFFFFF;
-  overflow-x: hidden;
+  overflow-x: hidden;}
 
  /*background image du header*/
  .background-image_header {
@@ -444,6 +444,7 @@ text-transform: capitalize;
   justify-content: center; /* Centre horizontalement */
   align-items: center; 
   margin-top: 450px;
+  margin-left: 0;
   width: 20%;
   position: absolute;
   
@@ -497,14 +498,15 @@ text-transform: capitalize;
     color: #E35F0F;
     text-align: center;
     font-family: Nunito;
-    font-size: 32px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 28px; /* 70% */
+    margin-left: 0;
 }
 
 .photo-objectif{
-    width: 100%;
+    width: 90%;
     height: auto;
     flex-shrink: 0;
     border-radius: 20px;border-radius: 20px;
@@ -562,6 +564,7 @@ text-transform: capitalize;
       font-style: normal;
       font-weight: 700;
       line-height: 28px;
+      margin-left: 0;
     }
     
 .texte-vision{
@@ -585,9 +588,10 @@ text-transform: capitalize;
     align-items: center;
     font-size: 18px;
     margin-top: 45px;
+    margin-left: 30%;
     border-radius: 10px;
     background: #E35F0F;
-    width: 205px;
+    width: 250px;
     height: 45px;
     flex-shrink: 0;
     color: #FFF;
@@ -640,8 +644,6 @@ text-transform: capitalize;
     margin-bottom: 25px;
     box-shadow: 0px 0px 3px 4px rgba(98, 94, 94, 0.18); 
 }
-}
-}
 
 .excellence h3, 
 .innovation h3,
@@ -671,15 +673,15 @@ text-transform: capitalize;
 .sama-digit{
   display: none;
   }
+}
 
-
-@media screen and (max-width:767px) {*
+@media screen and (min-width: 0px) and (max-width:767px) {
   
   body{
     margin: 0;
     background-color: #FFFFFF;
     overflow-x: hidden;
-  
+  }
    /*background image du header*/
    .background-image_header {
     background:rgba(0,0,0,0.6)url('./images/image-a-propos-de-nous.png'); 
@@ -932,8 +934,8 @@ text-transform: capitalize;
       margin-bottom: 25px;
       box-shadow: 0px 0px 3px 4px rgba(98, 94, 94, 0.18); 
   }
-}
-}
+
+
 
   .excellence h3, 
   .innovation h3,
@@ -963,4 +965,4 @@ text-transform: capitalize;
   /*style de la section sama digit */
   .sama-digit{
     display: none;
-    }
+    }}
