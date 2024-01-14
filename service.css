@@ -413,3 +413,79 @@ letter-spacing: 0.8px;
   }
 
  }
+ @media only screen and (min-width: 0px) and (max-width:767px){
+  .background-image_header {
+    height: 300px;
+  }
+  /* le titre du header*/
+  .titre-container h1 {
+    font-size: 30px;
+    line-height: 20px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%; 
+    top: -10%;
+  }
+  .numerique{
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    left: 50%; 
+    top: -15%;
+   transform: translateX(-50%);
+    
+  }
+  
+  .first-paragraphe p{
+    width: 90%;
+    font-size: 12px;
+    line-height: 20px;
+  }
+   /*style section accompagnement personnalisé  */
+
+   .section-accompagnement, 
+   .section-evaluation-des-competences,
+    .section-suivi-et-mesure-des-progres,
+    .section-atelier-de-groupe-interactif,
+    .section-de-bibliotheque-de-ressource-numerique{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .paragraphes{
+    margin-left: 0;
+    width: 95%;
+  }
+  .paragraphes p{
+    width: 85%;
+    font-size: 12px;
+    line-height: 20px; /* 160% */
+    word-spacing: 2px;
+    
+  }
+  .paragraphes ul{
+    margin-left: 0;
+  }
+
+
+  .numero-du-titre1  h3, .numero-du-titre2 h3, .numero-du-titre3 h3, .numero-du-titre4 h3, .numero-du-titre5 h3{
+    display: none;
+    
+  }
+  .titre1, .titre2, .titre3,.titre4,.titre5{
+    font-size: 16px;
+    
+  }
+   /* style de la phrase comment sa marche */
+   .button{
+    margin-left:15%;
+    max-width: 400px;
+    
+   }
+  .button a{
+    font-size: 14px;
+  }
+  
+ }
