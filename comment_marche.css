@@ -647,16 +647,13 @@ margin-top: 10px;
   .content-text {
     max-width: 60%;
     margin: 0;
-    align-items: center;
   }
  
   .content-text p {
-    font-size: 12px;
+    font-size: 14px;
     width: 80%;
-    line-height: 30px;
-  
+    line-height: 22px;
    text-align: justify;
-   word-spacing: 6px; 
   }
   .content {
     height: 700px;
@@ -761,6 +758,11 @@ margin-top: 10px;
     font-size: 24px;
     
   }
+
+   .la_deuxieme_etape .ligne_conteneur, .la_quatrieme_etape .ligne_conteneur{
+    display: flex;
+    flex-direction: column-reverse;
+   }
   /*equipe*/
   #equipe{
     display: none;
