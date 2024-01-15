@@ -479,6 +479,23 @@ letter-spacing: 0.8px;
     font-size: 16px;
     
   }
+  .numero-du-titre1,
+  .numero-du-titre5,
+  .numero-du-titre3 {
+   order: 1;
+ }
+ .section-accompagnement img,
+  .section-de-bibliotheque-de-ressource-numerique img,
+  .section-suivi-et-mesure-des-progres img
+  {
+   order: 2;
+ }
+ .section-accompagnement .paragraphes,
+  .section-de-bibliotheque-de-ressource-numerique .paragraphes,
+   .section-suivi-et-mesure-des-progres .paragraphes{
+   order: 3;
+ }
+
    /* style de la phrase comment sa marche */
    .button{
     margin-left:15%;
