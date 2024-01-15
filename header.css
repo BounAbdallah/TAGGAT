@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    width: 100%; 
+    width: 90%; 
     height: 106px;
     padding: 0 20px; 
     background-color: rgba(0, 0, 0, 0.5); 
@@ -131,7 +131,7 @@
     justify-content: space-around;
     margin-top: -100px;
   }
- 
+  
 }
 @media only screen and (min-width: 0px) and (max-width: 767px){
   nav{
@@ -149,5 +149,58 @@
   .logo img{
     width:100%px ;
 
+  }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    top: 120px;
+    left: 130px;
+    width: 100px;
+    height: 100px;
+    padding-top: 50px;
+    background-color: rgba(39, 52, 139, 0.80);
+    gap: 50px;
+    width: 45%;
+  }
+  .recherche{
+    display: none;
+  }
+  .login{
+    display: none;
+  }
+
+  .navbar.show {
+    display: flex;
+  }
+
+  .navbar ul {
+     
+      flex-direction: column;
+      flex-wrap: wrap;
+    margin-top: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 10px;
+  
+  }
+  .navbar ul li a {
+    margin-left: 1%;
+    line-height: 18px;
+  }
+  .navbar ul li a:hover,a.active  {
+    border-bottom:none;
+    color: #E35F0F;
+    padding: 8px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .recherche{
+    display: flex;
+    margin-right: 60px;
+    justify-content: space-around;
+    margin-top: -100px;
   }
 }
