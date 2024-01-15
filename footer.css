@@ -1,0 +1,202 @@
+/*footer*/
+footer{
+  background: #1F1F1F;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  justify-content: space-between;
+  padding: 30px 5px;
+  }
+  .footer_principal {
+  display: flex;
+  justify-content: space-between; /* Pour espacer les éléments sur toute la largeur */
+  flex-wrap: wrap; /* Pour permettre le retour à la ligne si nécessaire */
+  }
+  /* Styles pour chaque section */
+  .slogan,
+  .nav-bar_footer,
+  .contact_footer,
+  .social_media {
+  flex: 1; /* Chaque section prend autant d'espace disponible */
+  display: flex;
+  align-items: center; /* Alignement vertical */
+  }
+  .slogan{
+  display: inline-block;
+  max-width: 25%;
+  }
+  footer .logo{
+  width: 185px;
+  height: 75px;
+  margin-left: -40px;
+  }
+  .le_paragraphe_footer{
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  width: 90%;
+  text-align: center;
+  margin-left: 30px;
+  }
+  .le_paragraphe_footer p{
+  margin-top: 80px; 
+  }
+  
+  .nav-bar_footer{
+  max-width: 25%;
+  }
+  .nav-bar_footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 30px;
+  margin-left: 100px;
+  margin-top: 60px;
+  }
+  .nav-bar_footer ul li a {
+  text-decoration: none; 
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px; 
+  }
+  
+  .contact_footer{
+  display: inline-block;
+  max-width: 25%;
+  gap: 30px;
+  margin-top: 40px;
+  }
+  .contact_footer p{
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  margin-left: 15px;
+  color: #FFFFFF;
+  
+  }
+  .contact_phone{
+  display: flex;
+  }
+  .contact_email{
+  display: flex;
+  }
+  .contact_google{
+  display: flex;
+  }
+  .social_media{
+  display: inline-block;
+  max-width: 25%;
+  margin-top: 60px;
+  margin-left: 20px;
+  }
+  .icons-reseaux{
+  display: flex;
+  gap: 20px;
+  }
+  .social_media p{
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #FFFFFF;
+  }
+  .Copyright{
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 15px;
+  text-align: center;
+  margin-top: 60px;
+  color: #FFFFFF;
+  }
+
+/*la responsivité*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer_principal {
+  display: flex;
+  flex-wrap: wrap; /* Pour permettre le retour à la ligne si nécessaire */
+  }
+  
+  /* Styles pour chaque section */
+  .slogan,
+  .nav-bar_footer,
+  .contact_footer,
+  .social_media {
+  max-width: 60%;
+  } 
+  .nav-bar_footer ul {
+  margin-top: 50px;
+  }
+  .nav-bar_footer ul li a{
+  font-size: 16px;
+  }
+  .contact_footer p, .le_paragraphe_footer, .Copyright{
+  font-size: 20px;
+  }
+  }
+  /* Ajoutez ces styles pour le mode mobile */
+  @media only screen and (max-width: 767px) {
+  
+  .footer_principal {
+  flex-direction: column; /* Aligne les éléments en colonne */
+ 
+  }
+  .slogan{
+  max-width: 100%;
+  }
+  footer .logo{
+  margin-left: 15%;
+  }
+  .le_paragraphe_footer p{
+  width: 70%;
+  margin-left: 10%;
+  margin-top: 0;
+  font-size: 18px;
+  }
+  .nav-bar_footer,
+  .contact_footer,
+  .social_media {
+  display: inline-block;
+  justify-content: end;
+  width: 100%; 
+  margin: 8px;/* Ajoutez une marge inférieure entre les sections */
+  text-align: left; /* Aligne le texte à gauche */
+  margin-left: 20px;
+ 
+  
+  }
+  
+  .nav-bar_footer ul {
+  display: inline-block;
+  justify-content: end;
+  line-height: 50px;
+  margin-left:20px ;
+  margin: 8px;
+  }
+  
+  .lien_coaching p{
+  display: none;
+  }
+  .contact_footer p{
+    font-size: 16px;
+    display: flex;
+    }
+    .nav-bar_footer ul li a {
+
+      font-size: 16px;
+       
+      }
+      
+  
+  }

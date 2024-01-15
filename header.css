@@ -1,0 +1,217 @@
+/* Style pour le header */
+.navigation{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    height: 106px;
+    padding: 0 20px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+  }
+
+  /* Style pour le logo */
+  .logo img {
+    width: 164.03px;
+    height: 63px;
+    margin-left: 100px; 
+  }
+  .btn-nav{
+    display: none;
+  }
+
+  /* Style pour la barre de navigation */
+  .navbar ul {
+    list-style: none; 
+    margin-right: 150px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .navbar ul li {
+    display: inline-block;
+    margin: 0 10px; 
+  }
+
+  .navbar ul li a {
+    text-decoration: none; 
+    color: #FFFFFF;
+    font-size: 16px; 
+    font-family: Nunito;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+    position: relative;
+
+  }
+  .navbar ul li a:hover,a.active  {
+    border-bottom: 2px solid #E35F0F;
+    padding: 8px;
+  }
+  .menu-toggle{
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: block;
+}
+.navbar.show {
+  display: flex;
+}
+.menu-items{
+  display: none;
+  visibility: hidden;
+}
+.btn-nav:hover{
+  cursor: pointer;
+}
+.btn-nav:active + .menu-items{
+  display: block;
+  background: white;
+}
+
+.recherche{
+  display: none;
+}
+@media only screen and (min-width: 768px) and (max-width:1024px){
+  body{
+    overflow-x: hidden;
+  }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    top: 150px;
+    left: 170px;
+    right: 200px;
+    width: 100px;
+    height: 100px;
+    padding-top: 50px;
+    background-color: rgba(39, 52, 139, 0.80);
+    gap: 50px;
+    width: 45%;
+  }
+  .btn-nav{
+    display: block;
+    margin-left: -100%;
+  }
+  .recherche{
+    display: none;
+  }
+  .login{
+    display: none;
+  }
+
+  .navbar.show {
+    display: flex;
+  }
+
+  .navbar ul {
+     
+      flex-direction: column;
+      flex-wrap: wrap;
+    margin-top: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 10px;
+  
+  }
+  .navbar ul li a {
+    margin-left: 1%;
+    line-height: 20px;
+  }
+  .navbar ul li a:hover,a.active  {
+    border-bottom:none;
+    color: #E35F0F;
+    padding: 8px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .recherche{
+    display: flex;
+    margin-right: 60px;
+    justify-content: space-around;
+    margin-top: -100px;
+  }
+  
+}
+@media only screen and (min-width: 0px) and (max-width: 767px){
+  nav{
+    margin-left: 5px;
+    margin-right: 33px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .logo{
+    width:150px ;
+    margin-left: -15%;
+  }
+  .logo img{
+    width:100%px ;
+
+  }
+  .btn-nav{
+    display: block;
+    margin-left: -100%;
+  }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    top: 120px;
+    left: 130px;
+    width: 100px;
+    height: 100px;
+    padding-top: 50px;
+    background-color: rgba(39, 52, 139, 0.80);
+    gap: 50px;
+    width: 45%;
+  }
+  .recherche{
+    display: none;
+  }
+  .login{
+    display: none;
+  }
+
+  .navbar.show {
+    display: flex;
+  }
+
+  .navbar ul {
+     
+      flex-direction: column;
+      flex-wrap: wrap;
+    margin-top: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 10px;
+  
+  }
+  .navbar ul li a {
+    margin-left: 1%;
+    line-height: 18px;
+  }
+  .navbar ul li a:hover,a.active  {
+    border-bottom:none;
+    color: #E35F0F;
+    padding: 8px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .recherche{
+    display: flex;
+    margin-right: 60px;
+    justify-content: space-around;
+    margin-top: -100px;
+  }
+}
